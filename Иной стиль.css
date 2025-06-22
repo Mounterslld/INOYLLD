@@ -514,3 +514,13 @@
         .tab-content.active {
             display: block;
         }
+        .username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
