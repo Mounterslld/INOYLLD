@@ -20,30 +20,13 @@
             color: #ffffff;
         }
 
-        .btn-primary {
-            background-color: #5c7e10;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 2px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .btn-primary:hover {
-            background-color: #6e8c1f;
-        }
-
-        .discount {
-            color: #a4d007;
-            font-size: 14px;
-        }
-
         /* Шапка */
         .steam-header {
             background-color: #171a21;
             padding: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
         }
 
         .header-container {
@@ -124,145 +107,16 @@
         }
 
         /* Основной контент */
-        .content-wrapper {
-            display: flex;
+        .main-wrapper {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
-        .main-content {
-            flex: 3;
-            margin-right: 20px;
-        }
-
-        .sidebar {
-            flex: 1;
-        }
-
-        /* Шапка */
-        .steam-header {
-            background-color: #171a21;
-            padding: 10px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .logo img {
-            height: 90px;
-        }
-
-        .main-nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        .main-nav li {
-            margin: 0 15px;
-        }
-
-        .main-nav a {
-            color: #b8b6b4;
-            font-size: 14px;
-        }
-
-        .main-nav a:hover {
-            color: #ffffff;
-        }
-
-        .user-actions {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-bar {
-            display: flex;
-            margin-right: 15px;
-        }
-
-        .search-bar input {
-            background-color: #2b4252;
-            border: none;
-            padding: 5px 10px;
-            color: white;
-            border-radius: 3px 0 0 3px;
-            width: 200px;
-        }
-
-        .search-bar button {
-            background-color: #5896be;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-        }
-
-        .user-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .username {
-            margin-right: 10px;
-            color: #b8b6b4;
-            font-size: 14px;
-        }
-
-        .avatar {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
-
-        /* Подвал */
-        .steam-footer {
-            background-color: #171a21;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .footer-links ul {
-            display: flex;
-            list-style: none;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-        }
-
-        .footer-links li {
-            margin-right: 15px;
-            margin-bottom: 5px;
-        }
-
-        .footer-links a {
-            color: #b8b6b4;
-            font-size: 12px;
-        }
-
-        .footer-copyright p {
-            color: #666;
-            font-size: 11px;
-        }
-
-        /*Блок новостей*/
+        /* Блок новостей */
         .news-container {
-            max-width: 900px;
-            margin-top: -10;
+            width: 100%;
+            margin: 30px auto;
             background: #16202d;
             border-radius: 4px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
