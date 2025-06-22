@@ -4,276 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam-стиль профиль</title>
-    <style>
-        /* Общие стили */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #1b2838;
-            color: #e5e5e5;
-        }
-        
-        .container {
-            max-width: 940px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Шапка профиля */
-        .profile-header {
-            background-color: #171a21;
-            border-radius: 4px;
-            padding: 20px;
-            margin-bottom: 20px;
-            display: flex;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        
-        .profile-avatar {
-            width: 184px;
-            height: 184px;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-right: 20px;
-            border: 2px solid #67c1f5;
-        }
-        
-        .profile-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .profile-info {
-            flex: 1;
-        }
-        
-        .profile-name {
-            color: #fff;
-            font-size: 26px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .profile-status {
-            color: #67c1f5;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        
-        .profile-description {
-            color: #c6d4df;
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        
-        .profile-stats {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .stat-item {
-            background-color: rgba(103, 193, 245, 0.2);
-            padding: 5px 10px;
-            border-radius: 2px;
-            font-size: 12px;
-        }
-        
-        /* Контент профиля */
-        .profile-content {
-            display: flex;
-            gap: 20px;
-        }
-        
-        /* Левая колонка */
-        .left-column {
-            flex: 1;
-        }
-        
-        /* Правая колонка */
-        .right-column {
-            width: 300px;
-        }
-        
-        /* Блоки */
-        .block {
-            background-color: #171a21;
-            border-radius: 4px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        
-        .block-title {
-            color: #67c1f5;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #2a3f5a;
-        }
-        
-        /* Публикации */
-        .post {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #2a3f5a;
-        }
-        
-        .post:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        
-        .post-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .post-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 10px;
-        }
-        
-        .post-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .post-author {
-            color: #67c1f5;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        
-        .post-date {
-            color: #556772;
-font-size: 12px;
-            margin-left: 10px;
-        }
-        
-        .post-content {
-            color: #c6d4df;
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-        
-        .post-footer {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .post-action {
-            color: #67c1f5;
-            font-size: 12px;
-            cursor: pointer;
-        }
-        
-        /* Друзья */
-        .friends-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        
-        .friend-item {
-            text-align: center;
-        }
-        
-        .friend-avatar {
-            width: 64px;
-            height: 64px;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 0 auto 5px;
-        }
-        
-        .friend-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .friend-name {
-            color: #67c1f5;
-            font-size: 12px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        
-        /* Игры */
-        .game-item {
-            display: flex;
-            margin-bottom: 10px;
-        }
-        
-        .game-item:last-child {
-            margin-bottom: 0;
-        }
-        
-        .game-cover {
-            width: 64px;
-            height: 32px;
-            border-radius: 2px;
-            overflow: hidden;
-            margin-right: 10px;
-        }
-        
-        .game-cover img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .game-info {
-            flex: 1;
-        }
-        
-        .game-title {
-            color: #fff;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        
-        .game-hours {
-            color: #556772;
-            font-size: 12px;
-        }
-        
-        /* Кнопка */
-        .btn {
-            display: inline-block;
-            background: linear-gradient(to bottom, #799905 5%, #536904 95%);
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 2px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-        
-        .btn:hover {
-            background: linear-gradient(to bottom, #8fb305 5%, #6a8504 95%);
-        }
-    </style>
+    <link rel="stylesheet" href="profil.css">
 </head>
+<header class="steam-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://a.imgfoto.host/2025/06/21/AddText_06-21-05.49.34.md.png" alt="INOY">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Иной.html" class="nav-link" data-tab="store">Магазин</a></li>
+                    <li><a href="новости.html" class="nav-link" data-tab="library">Новости</a></li>
+                    <li><a href="Сообщество.html" class="nav-link" data-tab="community">Сообщество</a></li>
+                    <li><a href="Жанры.html" class="nav-link" data-tab="profile">Библиотека</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <span class="username">Игрок123</span>
+                    <img src="https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg" alt="Аватар" class="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
 <body>
     <div class="container">
         <!-- Шапка профиля -->
@@ -303,7 +60,7 @@ font-size: 12px;
                 <!-- Публикации -->
                 <div class="block">
                     <h2 class="block-title">Публикации</h2>
-<div class="post">
+                    <div class="post">
                         <div class="post-header">
                             <div class="post-avatar">
                                 <img src="https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg" alt="Аватар">
@@ -317,9 +74,9 @@ font-size: 12px;
                             Рекомендую всем фанатам RPG!
                         </div>
                         <div class="post-footer">
-                            <span class="post-action">Нравится (24)</span>
-                            <span class="post-action">Комментировать</span>
-                            <span class="post-action">Поделиться</span>
+                            <span class="post-action"><i class="fas fa-thumbs-up"></i> Нравится (24)</span>
+                            <span class="post-action"><i class="fas fa-comment"></i> Комментировать</span>
+                            <span class="post-action"><i class="fas fa-share"></i> Поделиться</span>
                         </div>
                     </div>
                     
@@ -336,9 +93,9 @@ font-size: 12px;
                             Предпочтительно играть вечером после 19:00. Пишите в личку, если заинтересованы.
                         </div>
                         <div class="post-footer">
-                            <span class="post-action">Нравится (12)</span>
-                            <span class="post-action">Комментировать</span>
-                            <span class="post-action">Поделиться</span>
+                            <span class="post-action"><i class="fas fa-thumbs-up"></i> Нравится (12)</span>
+                            <span class="post-action"><i class="fas fa-comment"></i> Комментировать</span>
+                            <span class="post-action"><i class="fas fa-share"></i> Поделиться</span>
                         </div>
                     </div>
                 </div>
@@ -374,7 +131,7 @@ font-size: 12px;
                             </div>
                             <div class="friend-name">Друг4</div>
                         </div>
-<div class="friend-item">
+                        <div class="friend-item">
                             <div class="friend-avatar">
                                 <img src="https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg" alt="Аватар">
                             </div>
