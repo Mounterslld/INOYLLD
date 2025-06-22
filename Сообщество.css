@@ -368,3 +368,37 @@
             color: #8f98a0;
             font-size: 12px;
         }
+        /* Подвал */
+        .steam-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
