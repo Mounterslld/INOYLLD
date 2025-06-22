@@ -26,8 +26,8 @@
             padding: 0 15px;
         }
         
-        /* Шапка */
-        .header {
+        /* Шапка Steam */
+        .steam-header {
             background-color: #171a21;
             padding: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -37,59 +37,78 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
         .logo img {
             height: 40px;
         }
         
-        .nav-menu ul {
+        .main-nav ul {
             display: flex;
             list-style: none;
         }
         
-        .nav-menu li {
+        .main-nav li {
             margin: 0 15px;
         }
         
-        .nav-menu a {
+        .main-nav a {
             color: #b8b6b4;
             font-size: 14px;
             transition: color 0.2s;
         }
         
-        .nav-menu a:hover {
+        .main-nav a:hover {
             color: #ffffff;
         }
         
-        .user-panel {
+        .user-actions {
             display: flex;
             align-items: center;
         }
         
-        .search {
-            margin-right: 20px;
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
         }
         
-        .search input {
+        .search-bar input {
             background-color: #316282;
             border: none;
             padding: 5px 10px;
-            border-radius: 3px;
             color: white;
+            border-radius: 3px 0 0 3px;
             width: 200px;
         }
         
-        .user-info {
-            display: flex;
-            align-items: center;
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
         }
         
-        .user-avatar {
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+        
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            margin-right: 10px;
         }
         
         /* Основной контент */
@@ -186,7 +205,7 @@
             background: #316282;
         }
         
-        /* Правая колонка - лента сообщества */
+        /* Центральная колонка - лента сообщества */
         .community-feed {
             flex: 1;
         }
