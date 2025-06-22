@@ -262,7 +262,7 @@
         /*Блок новостей*/
         .news-container {
             max-width: 900px;
-            top: -10px;
+            top: -100px;
             margin: 0 auto;
             background: #16202d;
             border-radius: 4px;
