@@ -1,242 +1,82 @@
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+/* Основные стили Steam */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #1c1e21;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+            background-color: #1b2838;
+            color: #c6d4df;
+            margin: 0;
             padding: 20px;
         }
 
-        .news-feed {
-            max-width: 800px;
+        .news-container {
+            max-width: 900px;
             margin: 0 auto;
-        }
-
-        .news-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            background: #16202d;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             overflow: hidden;
         }
 
         .news-header {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px;
-            border-bottom: 1px solid #dddfe2;
-        }
-
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-            object-fit: cover;
-        }
-
-        .user-info {
-            flex: 1;
-        }
-
-        .username {
-            font-weight: 600;
-            color: #050505;
-            text-decoration: none;
-        }
-
-        .username:hover {
-            text-decoration: underline;
-        }
-
-        .post-time {
-            color: #65676b;
-            font-size: 12px;
-            margin-top: 2px;
-        }
-
-        .news-content {
-            padding: 12px 16px;
-        }
-
-        .news-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #050505;
-        }
-
-        .news-text {
-            margin-bottom: 15px;
-            color: #050505;
-        }
-
-        .news-image {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-
-        .news-stats {
-            display: flex;
-            padding: 8px 16px;
-            border-top: 1px solid #dddfe2;
-            border-bottom: 1px solid #dddfe2;
-            color: #65676b;
-            font-size: 14px;
-        }
-
-        .likes-count {
-            margin-right: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        .comments-count {
-            display: flex;
-            align-items: center;
-        }
-
-        .stats-icon {
-            margin-right: 5px;
-            font-size: 16px;
-        }
-
-        .news-actions {
-            display: flex;
-            padding: 4px 16px;
-        }
-
-        .action-btn {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px 0;
-            border-radius: 4px;
-            cursor: pointer;
-            color: #65676b;
-            font-weight: 600;
-            transition: background-color 0.2s;
-        }
-
-        .action-btn:hover {
-            background-color: #f2f3f5;
-        }
-
-        .action-icon {
-            margin-right: 8px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 15px 20px;
+            color: #fff;
             font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #2d3f56;
         }
 
-        .liked {
-            color: #1877f2;
+        .news-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #2d3f56;
+            transition: background 0.2s;
         }
 
-        .comments-section {
-            padding: 0 16px;
-            background-color: #f0f2f5;
-            border-top: 1px solid #dddfe2;
-            display: none;
+        .news-item:hover {
+            background: #1e2a3a;
         }
 
-        .comment {
-            display: flex;
-            padding: 12px 0;
-            border-bottom: 1px solid #dddfe2;
-        }
-
-        .comment:last-child {
+        .news-item:last-child {
             border-bottom: none;
         }
 
-        .comment-avatar {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            margin-right: 10px;
-            object-fit: cover;
+        .news-title {
+            color: #66c0f4;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-decoration: none;
+            display: inline-block;
         }
 
-        .comment-content {
-            flex: 1;
-        }
-        .comment-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 4px;
+        .news-title:hover {
+            color: #fff;
         }
 
-        .comment-username {
-            font-weight: 600;
-            font-size: 13px;
-            color: #050505;
+        .news-date {
+            color: #8f98a0;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .news-description {
+            color: #b8b6b4;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .news-footer {
+            padding: 10px 20px;
+            background: #1a252f;
+            text-align: right;
+            font-size: 12px;
+            color: #8f98a0;
+        }
+
+        .news-footer a {
+            color: #66c0f4;
             text-decoration: none;
         }
 
-        .comment-username:hover {
-            text-decoration: underline;
-        }
-
-        .comment-text {
-            font-size: 14px;
-            color: #050505;
-            margin-bottom: 4px;
-        }
-
-        .comment-actions {
-            display: flex;
-            font-size: 12px;
-            color: #65676b;
-        }
-
-        .comment-action {
-            margin-right: 15px;
-            cursor: pointer;
-        }
-
-        .comment-action:hover {
-            text-decoration: underline;
-        }
-
-        .add-comment {
-            display: flex;
-            padding: 12px 0;
-            align-items: center;
-        }
-
-        .comment-input {
-            flex: 1;
-            background-color: #fff;
-            border: none;
-            border-radius: 20px;
-            padding: 8px 12px;
-            font-size: 14px;
-            outline: none;
-            resize: none;
-            max-height: 100px;
-        }
-
-        .comment-submit {
-            margin-left: 10px;
-            background-color: #1877f2;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            padding: 6px 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .comment-submit:hover {
-            background-color: #166fe5;
+        .news-footer a:hover {
+            color: #fff;
         }
