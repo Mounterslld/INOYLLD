@@ -353,3 +353,53 @@ body {
             height: 30px;
             border-radius: 50%;
         }
+                .news-footer {
+            padding: 10px 20px;
+            background: #1a252f;
+            text-align: right;
+            font-size: 12px;
+            color: #8f98a0;
+        }
+
+        .news-footer a {
+            color: #66c0f4;
+            text-decoration: none;
+        }
+
+        .news-footer a:hover {
+            color: #fff;
+        }
+        /* Подвал */
+        .INOY-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
