@@ -258,9 +258,11 @@
             color: #666;
             font-size: 11px;
         }
+
+        /*Блок новостей*/
         .news-container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 10 auto;
             background: #16202d;
             border-radius: 4px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
