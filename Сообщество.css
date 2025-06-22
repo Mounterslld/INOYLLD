@@ -117,6 +117,15 @@
             margin-top: 20px;
         }
         
+        /* Левая колонка - профиль сообщества */
+        .community-profile {
+            width: 280px;
+            margin-right: 20px;
+            background: #171a21;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
         .community-banner {
             height: 150px;
             background: linear-gradient(rgba(30, 59, 114, 0), rgba(3, 6, 10, 0.548)), 
