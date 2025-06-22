@@ -1,82 +1,516 @@
-/* Основные стили Steam */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1b2838;
-            color: #c6d4df;
+/* Общие стили */
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
 
-        .news-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #16202d;
-            border-radius: 4px;
+        body {
+            background-color: #18232b;
+            color: #e5e5e5;
+        }
+
+        a {
+            color: #67c1f5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: #5c7e10;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-primary:hover {
+            background-color: #6e8c1f;
+        }
+
+        .discount {
+            color: #a4d007;
+            font-size: 14px;
+        }
+
+        /* Шапка */
+        .steam-header {
+            background-color: #171a21;
+            padding: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Основной контент */
+        .content-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        /* Герой баннер */
+        .hero-banner {
+            background: linear-gradient(to right, #1b2838, #2a475e);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
             overflow: hidden;
         }
 
-        .news-header {
-            background: linear-gradient(90deg, #1e3c72, #2a5298);
-            padding: 15px 20px;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-            border-bottom: 1px solid #2d3f56;
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-banner h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .featured-game {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .game-info h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .game-info p {
+            margin-bottom: 15px;
+            color: #b8b6b4;
+        }
+        .game-price {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        /* Сетка игр */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .game-card {
+            background-color: #16202d;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .game-details {
+            padding: 10px;
+        }
+
+        .game-details h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .game-details .price {
+            color: #b8b6b4;
+            font-size: 13px;
+        }
+
+        /* Боковая панель */
+        .sidebar-section {
+            background-color: #16202d;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-section h3 {
+            color: #67c1f5;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .recommended-list {
+            list-style: none;
+        }
+
+        .recommended-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #2a3f5a;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .recommended-list li:hover {
+            color: #ffffff;
         }
 
         .news-item {
-            padding: 15px 20px;
-            border-bottom: 1px solid #2d3f56;
-            transition: background 0.2s;
+            margin-bottom: 15px;
+            cursor: pointer;
         }
 
-        .news-item:hover {
-            background: #1e2a3a;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-title {
-            color: #66c0f4;
-            font-size: 16px;
-            font-weight: bold;
+        .news-item h4 {
+            color: #ffffff;
+            font-size: 14px;
             margin-bottom: 5px;
-            text-decoration: none;
-            display: inline-block;
         }
 
-        .news-title:hover {
-            color: #fff;
-        }
-
-        .news-date {
-            color: #8f98a0;
+        .news-item p {
+            color: #b8b6b4;
             font-size: 12px;
-            margin-bottom: 8px;
         }
 
-        .news-description {
+        /* Подвал */
+        .steam-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
+
+        /* Страница профиля */
+        .profile-page {
+            flex-direction: column;
+        }
+
+        .profile-header {
+            display: flex;
+            background-color: #16202d;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .profile-avatar {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .profile-avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
+        }
+
+        .profile-status {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 3px 0;
+            font-size: 12px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .profile-status.online {
+            background-color: #5ba32b;
+            color: white;
+        }
+
+        .profile-info h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .profile-level {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .level-badge {
+            background-color: #4c6b93;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .level-progress {
+            flex: 1;
+            height: 10px;
+            background-color: #2a3f5a;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #67c1f5;
+        }
+
+        .profile-stats {
+            display: flex;
+        }
+
+        .stat {
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 20px;
+            color: #67c1f5;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #b8b6b4;
+        }
+
+        .profile-nav ul {
+            display: flex;
+            list-style: none;
+            border-bottom: 1px solid #2a3f5a;
+            margin-bottom: 20px;
+        }
+
+        .profile-nav li {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .profile-nav a {
+            display: block;
+            padding: 10px 0;
             color: #b8b6b4;
             font-size: 14px;
-            line-height: 1.5;
         }
 
-        .news-footer {
-            padding: 10px 20px;
-            background: #1a252f;
-            text-align: right;
+        .profile-nav li.active a {
+            color: #ffffff;
+            border-bottom: 2px solid #67c1f5;
+        }
+
+        .activity-item {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #2a3f5a;
+        }
+
+        .activity-avatar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .activity-content p {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .activity-time {
+            color: #6d7882;
             font-size: 12px;
-            color: #8f98a0;
         }
 
-        .news-footer a {
-            color: #66c0f4;
-            text-decoration: none;
+        .recent-games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
         }
 
-        .news-footer a:hover {
-            color: #fff;
+        .recent-game {
+            background-color: #16202d;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .recent-game img {
+            width: 100%;
+            height: auto;
+        }
+
+        .game-playtime {
+            padding: 10px;
+            font-size: 12px;
+            color: #b8b6b4;
+        }
+
+        .game-playtime span {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Модальное окно */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: #16202d;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Вкладки */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
         }
