@@ -106,7 +106,6 @@
                 </div>
             </div>
         </aside>
-    </div>
 
     <!-- Библиотека -->
     <div id="library" class="content-wrapper tab-content">
@@ -311,114 +310,17 @@
         <div class="footer-container">
             <div class="footer-links">
                 <ul>
-                    <li><a href="#">О Steam</a></li>
+                    <li><a href="#">О INOY</a></li>
                     <li><a href="#">Работа в Steam</a></li>
-                    <li><a href="#">Steamworks</a></li>
                     <li><a href="#">Донаты</a></li>
-                    <li><a href="D:\Zona Downloads\INOYLLD\новости.html">Поддержка</a></li>
+                    <li><a href="#">Поддержка</a></li>
                 </ul>
             </div>
             <div class="footer-copyright">
-                <p>© 2023 SteamClone. Все права защищены.</p>
+                <p>© 2025 INOY. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Переключение между вкладками
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const tabId = this.getAttribute('data-tab');
-                    
-                    // Скрыть все вкладки
-                    document.querySelectorAll('.tab-content').forEach(tab => {
-                        tab.classList.remove('active');
-                    });
-                    
-                    // Показать выбранную вкладку
-                    document.getElementById(tabId).classList.add('active');
-                    
-                    // Обновить активную ссылку в навигации
-                    navLinks.forEach(navLink => {
-                        navLink.parentElement.classList.remove('active');
-                    });
-                    this.parentElement.classList.add('active');
-                });
-            });
-
-            // Переключение между вкладками профиля
-            const profileTabs = document.querySelectorAll('.profile-tab');
-            profileTabs.forEach(tab => {
-                tab.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const tabId = this.getAttribute('data-tab');
-                    
-                    // Скрыть все вкладки профиля
-                    document.querySelectorAll('.profile-tab-content').forEach(tabContent => {
-                        tabContent.classList.remove('active');
-                    });
-                    
-                    // Показать выбранную вкладку профиля
-                    document.getElementById(tabId).classList.add('active');
-                    
-                    // Обновить активную ссылку в навигации профиля
-                    profileTabs.forEach(profileTab => {
-                        profileTab.parentElement.classList.remove('active');
-                    });
-                    this.parentElement.classList.add('active');
-                });
-            });
-
-            // Обработка кликов по играм - ИСПРАВЛЕННАЯ ВЕРСИЯ
-            const gameCards = document.querySelectorAll('.game-card');
-            gameCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    const gameId = this.getAttribute('data-game');
-                    const modal = document.getElementById('gameModal');
-                    const gameTitle = document.getElementById('modal-game-title');
-                    const gameContent = document.getElementById('modal-game-content');
-                    
-                    // Установить заголовок
-                    gameTitle.textContent = this.querySelector('h3').textContent;
-                    
-                    // Заполнить контент (исправлены кавычки)
-                    gameContent.innerHTML = 
-                        `<img src="${this.querySelector('img').src}" style="width:100%;max-height:300px;object-fit:cover;margin-bottom:20px;">
-                        <p>${this.querySelector('h3').textContent} - это популярная игра с высокими оценками.</p>
-                        <p>Цена: ${this.querySelector('.price').textContent}</p>
-                        <button class="btn-primary" style="margin-top:20px;">Добавить в корзину</button>`;
-                    
-                    // Показать модальное окно
-                    modal.style.display = 'block';
-                });
-            });
-
-            // Закрытие модального окна
-            document.querySelector('.close-modal').addEventListener('click', function() {
-                document.getElementById('gameModal').style.display = 'none';
-            });
-
-            // Закрытие модального окна при клике вне его
-            window.addEventListener('click', function(e) {
-                if (e.target === document.getElementById('gameModal')) {
-                    document.getElementById('gameModal').style.display = 'none';
-                }
-            });
-            
-            // Обработка поиска
-            const searchButton = document.querySelector('.search-bar button');
-            if (searchButton) {
-                searchButton.addEventListener('click', function() {
-                    const searchInput = document.querySelector('.search-bar input');
-                    if (searchInput.value.trim() !== '') {
-                        alert('Поиск: ' + searchInput.value);
-                    }
-                });
-            }
-        });
-    </script>
 </body>
 </html>
