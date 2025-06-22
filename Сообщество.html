@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamClone - Игровая платформа</title>
+    <link rel="stylesheet" href="новости.css">
+    </head>
+<body>
+    <header class="steam-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://a.imgfoto.host/2025/06/21/AddText_06-21-05.49.34.md.png" alt="INOY">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Иной.html" class="nav-link" data-tab="store">Магазин</a></li>
+                    <li><a href="Иной.html" class="nav-link" data-tab="library">главная</a></li>
+                    <li><a href="Сообщество.html" class="nav-link" data-tab="community">Сообщество</a></li>
+                    <li><a href="#" class="nav-link" data-tab="profile">Профиль</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <span class="username">Игрок123</span>
+                    <img src="https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg" alt="Аватар" class="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Шапка -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" alt="Steam">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Сообщество</a></li>
+                    <li><a href="#">Чат</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <div class="search">
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <div class="user-info">
+                    <img src="https://i.imgur.com/6VBx3io.png" alt="Аватар" class="user-avatar">
+                    <span>Игрок123</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Основной контент -->
+    <div class="container community-page">
+        <!-- Левая колонка - профиль сообщества -->
+        <div class="community-profile">
+            <div class="community-banner"></div>
+            <div class="community-avatar">
+                <img src="https://i.imgur.com/JRHqd9T.png" alt="Аватар сообщества">
+            </div>
+            <div class="community-info">
+                <div class="community-name">Игровые новости</div>
+                <div class="community-members">245 678 подписчиков</div>
+                <div class="community-description">
+                    Сообщество для обсуждения последних игровых новостей, обзоров и событий в мире видеоигр.
+                </div>
+                <div class="community-actions">
+                    <button class="btn btn-subscribe">Подписаться</button>
+                    <button class="btn btn-invite">Пригласить друзей</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Центральная колонка - лента сообщества -->
+        <div class="community-feed">
+            <!-- Форма создания поста -->
+            <div class="post-form">
+                <textarea class="post-input" placeholder="Напишите что-нибудь..."></textarea>
+                <div class="post-actions">
+                    <div class="post-attachments">
+                        <button class="attachment-btn"><i class="fas fa-image"></i> Фото</button>
+                        <button class="attachment-btn"><i class="fas fa-video"></i> Видео</button>
+                        <button class="attachment-btn"><i class="fas fa-link"></i> Ссылка</button>
+                    </div>
+                    <button class="post-submit">Опубликовать</button>
+                </div>
+            </div>
+            
+            <!-- Посты сообщества -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://i.imgur.com/JRHqd9T.png" alt="Аватар" class="post-avatar">
+                    <div>
+                        <div class="post-author">Игровые новости</div>
+                        <div class="post-date">2 часа назад</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Valve анонсировала новое обновление для Counter-Strike 2, которое выйдет на следующей неделе. В обновлении будут исправлены основные баги и добавлены новые карты.
+                </div>
+                <img src="https://i.imgur.com/5X3Wj1L.jpg" alt="CS2" class="post-image">
+                <div class="post-footer">
+                    <div class="post-action"><i class="far fa-thumbs-up"></i> 1.2K</div>
+                    <div class="post-action"><i class="far fa-comment"></i> 324</div>
+                    <div class="post-action"><i class="fas fa-share"></i> Поделиться</div>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://i.imgur.com/6VBx3io.png" alt="Аватар" class="post-avatar">
+                    <div>
+                        <div class="post-author">Иван Петров</div>
+                        <div class="post-date">5 часов назад</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Кто-нибудь уже играл в новую Elden Ring DLC? Хотел бы услышать ваше мнение, стоит ли покупать?
+                </div>
+                <div class="post-footer">
+                    <div class="post-action"><i class="far fa-thumbs-up"></i> 87</div>
+                    <div class="post-action"><i class="far fa-comment"></i> 42</div>
+                    <div class="post-action"><i class="fas fa-share"></i> Поделиться</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Правая колонка - рекомендации -->
+        <div class="community-sidebar">
+            <div class="sidebar-block">
+                <div class="sidebar-title">Похожие сообщества</div>
+                <div class="recommended-community">
+                    <img src="https://i.imgur.com/7k3EsrA.png" alt="Аватар" class="recommended-avatar">
+                    <div>
+                        <div class="recommended-name">PC Мастерская</div>
+                        <div class="recommended-members">178K подписчиков</div>
+                    </div>
+                </div>
+                <div class="recommended-community">
+                    <img src="https://i.imgur.com/9yILB5F.png" alt="Аватар" class="recommended-avatar">
+                    <div>
+                        <div class="recommended-name">Киберспорт</div>
+                        <div class="recommended-members">342K подписчиков</div>
+                    </div>
+                </div>
+                <div class="recommended-community">
+                    <img src="https://i.imgur.com/4Z3Wv1M.png" alt="Аватар" class="recommended-avatar">
+                    <div>
+                        <div class="recommended-name">Игровые мемы</div>
+                        <div class="recommended-members">512K подписчиков</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-block">
+                <div class="sidebar-title">Рекомендации</div>
+                <div class="recommended-community">
+                    <img src="https://i.imgur.com/2X4Wv1Y.png" alt="Аватар" class="recommended-avatar">
+                    <div>
+                        <div class="recommended-name">Игровые скидки</div>
+                        <div class="recommended-members">156K подписчиков</div>
+                    </div>
+                </div>
+                <div class="recommended-community">
+                    <img src="https://i.imgur.com/3Y5Wx1Z.png" alt="Аватар" class="recommended-avatar">
+                    <div>
+                        <div class="recommended-name">Геймдев</div>
+                        <div class="recommended-members">89K подписчиков</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
