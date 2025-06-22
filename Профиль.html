@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam-стиль профиль</title>
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #1b2838;
+            color: #e5e5e5;
+        }
+        
+        .container {
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Шапка профиля */
+        .profile-header {
+            background-color: #171a21;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .profile-avatar {
+            width: 184px;
+            height: 184px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 2px solid #67c1f5;
+        }
+        
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        .profile-name {
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .profile-status {
+            color: #67c1f5;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .profile-description {
+            color: #c6d4df;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .profile-stats {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .stat-item {
+            background-color: rgba(103, 193, 245, 0.2);
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-size: 12px;
+        }
+        
+        /* Контент профиля */
+        .profile-content {
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* Левая колонка */
+        .left-column {
+            flex: 1;
+        }
+        
+        /* Правая колонка */
+        .right-column {
+            width: 300px;
+        }
+        
+        /* Блоки */
+        .block {
+            background-color: #171a21;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .block-title {
+            color: #67c1f5;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #2a3f5a;
+        }
+        
+        /* Публикации */
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #2a3f5a;
+        }
+        
+        .post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .post-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        
+        .post-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .post-author {
+            color: #67c1f5;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .post-date {
+            color: #556772;
+font-size: 12px;
+            margin-left: 10px;
+        }
+        
+        .post-content {
+            color: #c6d4df;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .post-footer {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .post-action {
+            color: #67c1f5;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        /* Друзья */
+        .friends-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .friend-item {
+            text-align: center;
+        }
+        
+        .friend-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 auto 5px;
+        }
+        
+        .friend-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .friend-name {
+            color: #67c1f5;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* Игры */
+        .game-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .game-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .game-cover {
+            width: 64px;
+            height: 32px;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        
+        .game-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .game-info {
+            flex: 1;
+        }
+        
+        .game-title {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        
+        .game-hours {
+            color: #556772;
+            font-size: 12px;
+        }
+        
+        /* Кнопка */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to bottom, #799905 5%, #536904 95%);
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 2px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to bottom, #8fb305 5%, #6a8504 95%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка профиля -->
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://via.placeholder.com/184" alt="Аватар">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">ИгровойНик</h1>
+                <div class="profile-status">В сети</div>
+                <div class="profile-description">
+                    Привет! Я заядлый геймер с более чем 10-летним опытом. Люблю RPG, шутеры и стратегии. 
+                    В свободное время участвую в турнирах и стримлю на Twitch. Добавляйтесь в друзья для совместных игр!
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">Уровень: 25</div>
+                    <div class="stat-item">Друзей: 127</div>
+                    <div class="stat-item">Игр: 86</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Контент профиля -->
+        <div class="profile-content">
+            <!-- Левая колонка -->
+            <div class="left-column">
+                <!-- Публикации -->
+                <div class="block">
+                    <h2 class="block-title">Публикации</h2>
+<div class="post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <img src="https://via.placeholder.com/32" alt="Аватар">
+                            </div>
+                            <span class="post-author">ИгровойНик</span>
+                            <span class="post-date">3 часа назад</span>
+                        </div>
+                        <div class="post-content">
+                            Только что завершил прохождение Cyberpunk 2077 с 100% достижений! 
+                            Потрясающая игра, несмотря на все баги. Особенно впечатлил сюжет и мир Найт-Сити. 
+                            Рекомендую всем фанатам RPG!
+                        </div>
+                        <div class="post-footer">
+                            <span class="post-action">Нравится (24)</span>
+                            <span class="post-action">Комментировать</span>
+                            <span class="post-action">Поделиться</span>
+                        </div>
+                    </div>
+                    
+                    <div class="post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <img src="https://via.placeholder.com/32" alt="Аватар">
+                            </div>
+                            <span class="post-author">ИгровойНик</span>
+                            <span class="post-date">2 дня назад</span>
+                        </div>
+                        <div class="post-content">
+                            Ищу команду для участия в турнире по CS:GO. Уровень: LE. 
+                            Предпочтительно играть вечером после 19:00. Пишите в личку, если заинтересованы.
+                        </div>
+                        <div class="post-footer">
+                            <span class="post-action">Нравится (12)</span>
+                            <span class="post-action">Комментировать</span>
+                            <span class="post-action">Поделиться</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Правая колонка -->
+            <div class="right-column">
+                <!-- Друзья -->
+                <div class="block">
+                    <h2 class="block-title">Друзья</h2>
+                    <div class="friends-grid">
+                        <div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг1</div>
+                        </div>
+                        <div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг2</div>
+                        </div>
+                        <div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг3</div>
+                        </div>
+                        <div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг4</div>
+                        </div>
+<div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг5</div>
+                        </div>
+                        <div class="friend-item">
+                            <div class="friend-avatar">
+                                <img src="https://via.placeholder.com/64" alt="Аватар">
+                            </div>
+                            <div class="friend-name">Друг6</div>
+                        </div>
+                    </div>
+                    <button class="btn" style="margin-top: 15px; width: 100%;">Все друзья</button>
+                </div>
+                
+                <!-- Игры -->
+                <div class="block">
+                    <h2 class="block-title">Недавно игранные</h2>
+                    <div class="game-item">
+                        <div class="game-cover">
+                            <img src="https://avatars.mds.yandex.net/get-entity_search/2115661/1156936197/S600xU_2x" alt="Обложка">
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">Cyberpunk 2077</div>
+                            <div class="game-hours">156.3 часа</div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game-cover">
+                            <img src="https://avatars.mds.yandex.net/get-entity_search/1988891/853403660/S600xU_2x" alt="Обложка">
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">CS:GO</div>
+                            <div class="game-hours">842.7 часа</div>
+                        </div>
+                    </div>
+                    <div class="game-item">
+                        <div class="game-cover">
+                            <img src="https://avatars.mds.yandex.net/get-entity_search/2383021/1171040595/S600xU_2x" alt="Обложка">
+                        </div>
+                        <div class="game-info">
+                            <div class="game-title">Dota 2</div>
+                            <div class="game-hours">327.1 часа</div>
+                        </div>
+                    </div>
+                    <button class="btn" style="margin-top: 15px; width: 100%;">Все игры</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
