@@ -5,11 +5,11 @@ body {
             margin: 0;
             padding: 20px;
         }
-        
+
         /* Шапка */
         .steam-header {
             background-color: #171a21;
-            padding: 10px 0;
+            padding: 30px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
