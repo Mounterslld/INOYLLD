@@ -1,44 +1,11 @@
-/* Общие стили */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+body {
             font-family: 'Arial', sans-serif;
+            background-color: #1b2838;
+            color: #c6d4df;
+            margin: 0;
+            padding: 20px;
         }
-
-        body {
-            background-color: #18232b;
-            color: #e5e5e5;
-        }
-
-        a {
-            color: #67c1f5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #ffffff;
-        }
-
-        .btn-primary {
-            background-color: #5c7e10;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 2px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .btn-primary:hover {
-            background-color: #6e8c1f;
-        }
-
-        .discount {
-            color: #a4d007;
-            font-size: 14px;
-        }
-
+        
         /* Шапка */
         .steam-header {
             background-color: #171a21;
