@@ -135,3 +135,114 @@ h1 {
     color: #8f98a0;
     font-style: italic;
 }
+.modal-genre {
+    color: #66c0f4; /* Голубой, как в Steam */
+    font-weight: bold;
+}
+/* Шапка */
+        .steam-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .download-btn {
+    background-color: #5c7e10; /* Зелёный как в Steam */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #6e9e1a;
+}
+
+.download-btn:active {
+    transform: scale(0.98);
+}
+.game-info p span.strategy-tag {
+    background-color: #8a2be2; /* Фиолетовый для стратегий */
+}
