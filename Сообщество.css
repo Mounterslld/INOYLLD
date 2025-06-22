@@ -1,0 +1,427 @@
+/* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #18232b;
+            color: #e5e5e5;
+        }
+
+        a {
+            color: #67c1f5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Шапка */
+        .steam-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        /* Шапка */
+        .header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin: 0 15px;
+        }
+        
+        .nav-menu a {
+            color: #b8b6b4;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        
+        .nav-menu a:hover {
+            color: #ffffff;
+        }
+        
+        .user-panel {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search {
+            margin-right: 20px;
+        }
+        
+        .search input {
+            background-color: #316282;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+            width: 200px;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .user-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        /* Основной контент */
+        .community-page {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        /* Левая колонка - профиль сообщества */
+        .community-profile {
+            width: 280px;
+            margin-right: 20px;
+            background: #171a21;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .community-banner {
+            height: 150px;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            position: relative;
+        }
+        
+        .community-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #171a21;
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            background: #2a475e;
+            overflow: hidden;
+        }
+        
+        .community-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .community-info {
+            padding: 60px 15px 15px;
+        }
+        
+        .community-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .community-members {
+            color: #8f98a0;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .community-description {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        
+        .community-actions {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border-radius: 2px;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .btn-subscribe {
+            background: #5c7e10;
+            color: white;
+        }
+        
+        .btn-subscribe:hover {
+            background: #6e8c1f;
+        }
+        
+        .btn-invite {
+            background: #2a475e;
+            color: #67c1f5;
+        }
+        
+        .btn-invite:hover {
+            background: #316282;
+        }
+        
+        /* Правая колонка - лента сообщества */
+        .community-feed {
+            flex: 1;
+        }
+        
+        .post-form {
+            background: #171a21;
+            padding: 15px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        
+        .post-input {
+            width: 100%;
+            background: #316282;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            color: white;
+            margin-bottom: 10px;
+            resize: none;
+        }
+        
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .post-attachments {
+            display: flex;
+        }
+        
+        .attachment-btn {
+            background: #2a475e;
+            color: #67c1f5;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .post-submit {
+            background: #5c7e10;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .post {
+            background: #171a21;
+            padding: 15px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .post-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .post-author {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .post-date {
+            color: #8f98a0;
+            font-size: 12px;
+        }
+        
+        .post-content {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .post-image {
+            max-width: 100%;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .post-footer {
+            display: flex;
+            border-top: 1px solid #2a475e;
+            padding-top: 10px;
+        }
+        
+        .post-action {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            color: #8f98a0;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        
+        .post-action i {
+            margin-right: 5px;
+        }
+        
+        /* Правая колонка - рекомендации */
+        .community-sidebar {
+            width: 280px;
+            margin-left: 20px;
+        }
+        
+        .sidebar-block {
+            background: #171a21;
+            border-radius: 3px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #67c1f5;
+        }
+        
+        .recommended-community {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a475e;
+        }
+        
+        .recommended-community:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .recommended-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .recommended-name {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        
+        .recommended-members {
+            color: #8f98a0;
+            font-size: 12px;
+        }
