@@ -49,10 +49,18 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
         description: "Киберспортивный хит Valve. Деффы против террористов на картах Dust II и Mirage."
-    },
-    // Стратегии
+    },    
     {
         id: 8,
+        title: "Lions Of War",
+        genre: "shooter",
+        image: "https://a.imgfoto.host/2025/06/22/photo_2025-04-13_14-20-24.md.jpeg",
+        description: "Данная игра повествует войну Леонида"
+    },
+    
+    // Стратегии
+    {
+        id: 9,
         title: "Stellaris",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg",
@@ -60,70 +68,70 @@ const games = [
     },
     // Инди
     {
-        id: 9,
+        id: 10,
         title: "Hollow Knight",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg",
         description: "Метроидвания с атмосферой и сложными боссами. Червячки с мечами!"
     },
     {
-        id: 10,
+        id: 11,
         title: "HUNT: SHOWDOWN 1896",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/594650/header.jpg",
         description: "Хардкорный PvPvE-шутер с атмосферой Луизианских болот. Охота на монстров, добыча трофеев и побег — пока вас не убили другие охотники."
     },
     {
-        id: 11,
+        id: 12,
         title: "Battlefield V",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg",
         description: "Масштабные сражения Второй мировой с разрушаемостью и тактическими режимами. «Роттердам» и «Огненный шторм» ждут!"
     },
     {
-        id: 12,
+        id: 13,
         title: "Arma 3",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/107410/header.jpg",
         description: "Симулятор военных действий с открытым миром. Реалистичная баллистика, моды вроде «DayZ» и «Exile», кооперативные миссии."
     },
     {
-        id: 13,
+        id: 14,
         title: "Arma Reforger",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1874880/header.jpg",
         description: "Обновлённая версия классики с движком Enfusion. Конфликт на острове Эверон в режимах PvP и PvE."
     },
     {
-        id: 14,
+        id: 15,
         title: "Deep Rock Galactic",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/548430/header.jpg",
         description: "Кооперативный шутер про гномов-шахтёров. Добывайте минералы, отбивайтесь от жуков и кричите «За Камень и Камень!»."
     },
     {
-        id: 15,
+        id: 16,
         title: "GTFO",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/493520/header.jpg",
         description: "Хоррор-шутер для 4 игроков. Вы — заключённые, которых отправили в подземный комплекс с мутантами. Тишина — ваше оружие."
     },
     {
-        id: 16,
+        id: 17,
         title: "Overwatch 2",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
         description: "Командный hero-шутер от Blizzard. Новые герои, режим «Push» и ежеквартальные ивенты."
     },
     {
-        id: 17,
+        id: 18,
         title: "Bodycam",
         genre: "shooter",
         image: "https://avatars.mds.yandex.net/i?id=c77076b2393f0b6a653803e0823ac00b_l-5287893-images-thumbs&n=13",
         description: "Хардкорный шутер от первого лица с гиперреалистичной графикой. Каждый выстрел на вес золота."
     },
     {
-        id: 18,
+        id: 19,
         title: "Dota 2",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
@@ -131,7 +139,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/570"
     },
     {
-        id: 19,
+        id: 20,
         title: "Hearts of Iron IV",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/394360/header.jpg",
@@ -139,7 +147,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/394360"
     },
     {
-        id: 20,
+        id: 21,
         title: "Broken Arrow",
         genre: "strategy",
         image: "https://avatars.mds.yandex.net/i?id=b1182189cd5f8e3994b50f0d81063e23_l-8200828-images-thumbs&n=13",
@@ -147,7 +155,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/1392080"
     },
     {
-        id: 21,
+        id: 22,
         title: "Victoria 3",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/529340/header.jpg",
@@ -155,7 +163,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/529340"
     },
     {
-        id: 22,
+        id: 23,
         title: "Warhammer 40,000: Rogue Trader",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2186680/header.jpg",
@@ -163,7 +171,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/2186680"
     },
     {
-        id: 23,
+        id: 24,
         title: "Northgard",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/466560/header.jpg",
@@ -171,7 +179,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/466560"
     },
     {
-        id: 24,
+        id: 25,
         title: "Tropico 6",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/492720/header.jpg",
@@ -179,7 +187,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/492720"
     },
     {
-        id: 25,
+        id: 26,
         title: "Kenshi",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/233860/header.jpg",
@@ -187,7 +195,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/233860"
     },
     {
-        id: 26,
+        id: 27,
         title: "Katana ZERO",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/460950/header.jpg",
@@ -195,7 +203,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/460950"
     },
     {
-        id: 27,
+        id: 28,
         title: "The Binding of Isaac: Rebirth",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/250900/header.jpg",
@@ -203,7 +211,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/250900"
     },
     {
-        id: 28,
+        id: 29,
         title: "Balatro",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2379780/header.jpg",
@@ -211,7 +219,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/2379780"
     },
     {
-        id: 29,
+        id: 30,
         title: "R.E.P.O.",
         genre: "indie",
         image: "https://avatars.mds.yandex.net/i?id=d99de769d017490c5240888cc4732cdd_l-4892849-images-thumbs&n=13",
@@ -219,7 +227,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/2652730"
     },
     {
-        id: 30,
+        id: 31,
         title: "Don't Starve",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/219740/header.jpg",
@@ -227,7 +235,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/219740"
     },
     {
-        id: 31,
+        id: 32,
         title: "Content Warning",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2881650/header.jpg",
@@ -235,7 +243,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/2881650"
     },
     {
-        id: 32,
+        id: 33,
         title: "Черная Книга",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1138660/header.jpg",
@@ -243,7 +251,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/1138660"
     },
     {
-        id: 33,
+        id: 34,
         title: "Dead Cells",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/588650/header.jpg",
@@ -251,7 +259,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/588650"
     },
     {
-        id: 34,
+        id: 35,
         title: "Sifu",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2138710/header.jpg",
@@ -259,7 +267,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/2138710"
     },
     {
-        id: 35,
+        id: 36,
         title: "Inscryption",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1092790/header.jpg",
