@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SteamClone - Игровая платформа</title>
+    <title>INOY - Игровая платформа</title>
     <link rel="stylesheet" href="Иной стиль.css">
     </head>
 <body>
@@ -17,7 +17,7 @@
                     <li><a href="Иной.html" class="nav-link" data-tab="store">Магазин</a></li>
                     <li><a href="новости.html" class="nav-link" data-tab="library">Новости</a></li>
                     <li><a href="Сообщество.html" class="nav-link" data-tab="community">Сообщество</a></li>
-                    <li><a href="#" class="nav-link" data-tab="profile">Библиотека</a></li>
+                    <li><a href="Жанры.html" class="nav-link" data-tab="profile">Библиотека</a></li>
                 </ul>
             </nav>
             <div class="user-actions">
@@ -32,7 +32,6 @@
             </div>
         </div>
     </header>
-
     <!-- Главная страница (Магазин) -->
     <div id="store" class="content-wrapper tab-content active">
         <div class="main-content">
@@ -108,8 +107,206 @@
             </div>
         </aside>
 
+    <!-- Библиотека -->
+    <div id="library" class="content-wrapper tab-content">
+        <div class="main-content">
+            <h2>Моя библиотека</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3">
+                    <div class="game-details">
+                        <h3>The Witcher 3: Wild Hunt</h3>
+                        <div class="price">124.5 ч всего</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+                    <div class="game-details">
+                        <h3>PUBG</h3>
+                        <div class="price">87.3 ч всего</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="CS:GO">
+                    <div class="game-details">
+                        <h3>CS:GO</h3>
+                        <div class="price">256.1 ч всего</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring">
+                    <div class="game-details">
+                        <h3>Elden Ring</h3>
+                        <div class="price">68.7 ч всего</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Сообщество -->
+    <div id="community" class="content-wrapper tab-content">
+        <div class="main-content">
+            <h2>Сообщество</h2>
+            <div class="activity-item">
+                <div class="activity-avatar">
+                    <img src="https://steamuserimages-a.akamaihd.net/ugc/885384897182110030/F095539864AC9E94AE5236E04C8CA7C2725BCEFF/" alt="Аватар">
+                </div>
+                <div class="activity-content">
+                    <p><strong>Друг1</strong> начал играть в <a href="#">The Witcher 3</a></p>
+                    <span class="activity-time">10 минут назад</span>
+                </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-avatar">
+                    <img src="https://steamuserimages-a.akamaihd.net/ugc/785238779857713420/0A0B4A9A0A3C0A4B3A7A3A3A3A3A3A3A3A3A3A3A/" alt="Аватар">
+                </div>
+                <div class="activity-content">
+                    <p><strong>Друг2</strong> получил достижение "Легенда" в <a href="#">Elden Ring</a></p>
+                    <span class="activity-time">2 часа назад</span>
+                </div>
+            </div>
+            <div class="activity-item">
+                <div class="activity-avatar">
+                    <img src="https://steamuserimages-a.akamaihd.net/ugc/785238779857713421/0A0B4A9A0A3C0A4B3A7A3A3A3A3A3A3A3A3A3A/" alt="Аватар">
+                    </div>
+                <div class="activity-content">
+                    <p><strong>Друг3</strong> опубликовал новый скриншот в <a href="#">Cyberpunk 2077</a></p>
+                    <span class="activity-time">5 часов назад</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer class="INOY-footer">
+    <!-- Профиль -->
+    <div id="profile" class="content-wrapper tab-content profile-page">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/885384897182110030/F095539864AC9E94AE5236E04C8CA7C2725BCEFF/" alt="Аватар">
+                <div class="profile-status online">В сети</div>
+            </div>
+            <div class="profile-info">
+                <h1>Игрок123</h1>
+                <div class="profile-level">
+                    <span class="level-badge">42</span>
+                    <div class="level-progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-value">256</span>
+                        <span class="stat-label">Игр</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">1,245</span>
+                        <span class="stat-label">Часов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">87</span>
+                        <span class="stat-label">Друзей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <nav class="profile-nav">
+                <ul>
+                    <li class="active"><a href="#" class="profile-tab" data-tab="activity">Активность</a></li>
+                    <li><a href="#" class="profile-tab" data-tab="games">Игры</a></li>
+                    <li><a href="#" class="profile-tab" data-tab="friends">Друзья</a></li>
+                </ul>
+            </nav>
+
+            <div class="profile-sections">
+                <section id="activity" class="profile-tab-content active">
+                    <h2>Недавняя активность</h2>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/885384897182110030/F095539864AC9E94AE5236E04C8CA7C2725BCEFF/" alt="Аватар">
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Игрок123</strong> получил достижение "Легенда" в <a href="#">The Witcher 3: Wild Hunt</a></p>
+                            <span class="activity-time">2 часа назад</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/885384897182110030/F095539864AC9E94AE5236E04C8CA7C2725BCEFF/" alt="Аватар">
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Игрок123</strong> добавил в свою коллекцию <a href="#">Elden Ring</a></p>
+                            <span class="activity-time">1 день назад</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="games" class="profile-tab-content">
+                    <h2>Недавно игранные</h2>
+                    <div class="recent-games-grid">
+                        <div class="recent-game">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3">
+                            <div class="game-playtime">
+                                <span>15.2 ч за последние 2 недели</span>
+                                <span>124.5 ч всего</span>
+                            </div>
+                        </div>
+                        <div class="recent-game">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+                            <div class="game-playtime">
+                                <span>8.7 ч за последние 2 недели</span>
+                                <span>87.3 ч всего</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="friends" class="profile-tab-content">
+                    <h2>Друзья</h2>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/785238779857713420/0A0B4A9A0A3C0A4B3A7A3A3A3A3A3A3A3A3A3A/" alt="Аватар">
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Друг1</strong> <span class="online">В сети</span></p>
+                            <p>Играет в The Witcher 3</p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/785238779857713421/0A0B4A9A0A3C0A4B3A7A3A3A3A3A3A3A3A3A3A/" alt="Аватар">
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Друг2</strong> <span class="online">В сети</span></p>
+                            <p>Играет в Dota 2</p>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/785238779857713422/0A0B4A9A0A3C0A4B3A7A3A3A3A3A3A3A3A3A3A/" alt="Аватар">
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Друг3</strong> <span class="offline">Не в сети</span></p>
+                            <p>Последний раз был 2 дня назад</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно игры -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-game-title">Название игры</h2>
+            <div id="modal-game-content">
+                <!-- Контент будет загружен динамически -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="steam-footer">
         <div class="footer-container">
             <div class="footer-links">
                 <ul>
