@@ -7,150 +7,38 @@
     <link rel="stylesheet" href="новости.css">
     </head>
 <body>
-    <div class="news-feed">
-        <div class="news-card">
-            <div class="news-header">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar">
-                <div class="user-info">
-                    <a href="#" class="username">Иван Петров</a>
-                    <div class="post-time">2 часа назад · <i class="fas fa-globe-europe"></i></div>
-                </div>
-            </div>
-            
-            <div class="news-content">
-                <h2 class="news-title">Valve анонсировала новую версию Steam Deck</h2>
-                <p class="news-text">Компания Valve официально представила Steam Deck OLED - обновлённую версию портативной игровой консоли с улучшенным экраном, увеличенной батареей и более мощным железом. Релиз запланирован на ноябрь этого года.</p>
-                <img src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/share/steamdeck_hero_2x.jpg" alt="Steam Deck" class="news-image">
-            </div>
-            
-            <div class="news-stats">
-                <div class="likes-count">
-                    <i class="fas fa-thumbs-up stats-icon"></i>
-                    <span class="likes-number">124</span>
-                </div>
-                <div class="comments-count">
-                    <i class="fas fa-comment stats-icon"></i>
-                    <span class="comments-number">23</span>
-                </div>
-            </div>
-            
-            <div class="news-actions">
-                <div class="action-btn like-btn">
-                    <i class="far fa-thumbs-up action-icon"></i>
-                    <span>Нравится</span>
-                </div>
-                <div class="action-btn comment-btn">
-                    <i class="far fa-comment action-icon"></i>
-                    <span>Комментировать</span>
-                </div>
-                <div class="action-btn">
-                    <i class="fas fa-share action-icon"></i>
-                    <span>Поделиться</span>
-                </div>
-            </div>
-            
-            <div class="comments-section">
-                <div class="comment">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="comment-avatar">
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <a href="#" class="comment-username">Мария Сидорова</a>
-                        </div>
-                        <p class="comment-text">Наконец-то! Ждал этого анонса. Интересно, будет ли поддержка всех игр из библиотеки Steam?</p>
-                        <div class="comment-actions">
-                            <span class="comment-action">Нравится</span>
-                            <span class="comment-action">Ответить</span>
-                            <span class="comment-time">1 час назад</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="comment">
-                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" class="comment-avatar">
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <a href="#" class="comment-username">Алексей Иванов</a>
-                        </div>
-                        <p class="comment-text">Цена будет такой же как у предыдущей версии? Или дороже из-за OLED экрана?</p>
-                        <div class="comment-actions">
-                            <span class="comment-action">Нравится</span>
-                            <span class="comment-action">Ответить</span>
-                            <span class="comment-time">45 минут назад</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="add-comment">
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="comment-avatar">
-                    <textarea class="comment-input" placeholder="Напишите комментарий..."></textarea>
-                    <button class="comment-submit">Отправить</button>
-                </div>
+    <div class="news-container">
+        <div class="news-header">
+            Последние новости Steam
+        </div>
+
+        <div class="news-item">
+            <a href="#" class="news-title">Обновление Steam Deck — улучшенная производительность</a>
+            <div class="news-date">15 июня 2024</div>
+            <div class="news-description">
+                Valve выпустила новое обновление для Steam Deck, которое улучшает стабильность и добавляет поддержку новых игр. Обновление уже доступно для загрузки.
             </div>
         </div>
-        
-        <div class="news-card">
-            <div class="news-header">
-                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User" class="avatar">
-                <div class="user-info">
-                    <a href="#" class="username">Елена Смирнова</a>
-                    <div class="post-time">5 часов назад · <i class="fas fa-user-friends"></i></div>
-                </div>
+
+        <div class="news-item">
+            <a href="#" class="news-title">Летняя распродажа 2024 началась!</a>
+            <div class="news-date">10 июня 2024</div>
+            <div class="news-description">
+                Скидки до 90% на тысячи игр, включая новинки. Успейте купить любимые игры по лучшей цене до 30 июня.
             </div>
-            
-            <div class="news-content">
-                <h2 class="news-title">Steam Summer Sale 2024 - самые большие скидки за историю</h2>
-                <p class="news-text">Летняя распродажа Steam началась с рекордных скидок до 90% на тысячи игр. Особые предложения включают скидки на новинки, которые редко участвуют в распродажах. Акция продлится до 7 июля.</p>
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/public/images/events/summer2023/hero_02_english.jpg" alt="Steam Summer Sale" class="news-image">
+        </div>
+
+        <div class="news-item">
+            <a href="#" class="news-title">Counter-Strike 2 — новый крупный патч</a>
+            <div class="news-date">5 июня 2024</div>
+            <div class="news-description">
+                Исправлены баги, улучшена графика и добавлены новые карты. Полный список изменений можно посмотреть в блоге разработчиков.
             </div>
-            
-            <div class="news-stats">
-                <div class="likes-count">
-                    <i class="fas fa-thumbs-up stats-icon"></i>
-                    <span class="likes-number">356</span>
-                </div>
-                <div class="comments-count">
-                    <i class="fas fa-comment stats-icon"></i>
-                    <span class="comments-number">87</span>
-                </div>
-            </div>
-            
-            <div class="news-actions">
-                <div class="action-btn like-btn">
-                    <i class="far fa-thumbs-up action-icon"></i>
-                    <span>Нравится</span>
-                </div>
-                <div class="action-btn comment-btn">
-                    <i class="far fa-comment action-icon"></i>
-                    <span>Комментировать</span>
-                </div>
-                <div class="action-btn">
-                    <i class="fas fa-share action-icon"></i>
-                    <span>Поделиться</span>
-                </div>
-            </div>
-            
-            <div class="comments-section">
-                <div class="comment">
-                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" class="comment-avatar">
-                    <div class="comment-content">
-                        <div class="comment-header">
-                            <a href="#" class="comment-username">Дмитрий Козлов</a>
-                        </div>
-                        <p class="comment-text">Наконец-то можно докупить все отложенные игры! Уже составил список из 15 штук.</p>
-                        <div class="comment-actions">
-                            <span class="comment-action">Нравится</span>
-                            <span class="comment-action">Ответить</span>
-                            <span class="comment-time">3 часа назад</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="add-comment">
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="comment-avatar">
-                    <textarea class="comment-input" placeholder="Напишите комментарий..."></textarea>
-                    <button class="comment-submit">Отправить</button>
-                </div>
-            </div>
-        </div></div>
+        </div>
+
+        <div class="news-footer">
+            <a href="#">Показать все новости →</a>
+        </div>
+    </div>
 </body>
 </html>
