@@ -319,3 +319,18 @@
                 justify-content: center;
             }
         }
+
+        .login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
