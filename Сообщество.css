@@ -27,7 +27,7 @@
         }
         
         /* Шапка */
-        .steam-header {
+        .Inoy-header {
             background-color: #171a21;
             padding: 10px 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -391,3 +391,28 @@
             color: #666;
             font-size: 11px;
         }
+.username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
