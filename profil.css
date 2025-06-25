@@ -428,3 +428,61 @@ body {
     background: #3d6b8e;
     color: white;
 }
+/* Стили для подменю */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a475e;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(-10px);
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #c7d5e0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #3d6b8e;
+    color: white;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .has-submenu {
+        position: static;
+    }
+    
+    .submenu {
+        width: 100%;
+        position: static;
+        display: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .has-submenu:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+}
