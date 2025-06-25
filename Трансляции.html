@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOY - Трансляции</title>
+    <link rel="stylesheet" href="replay.css">
+</head>
+<body>
+    <header class="Inoy-header">
+        <!-- Ваша текущая шапка (как в других файлах) -->
+    </header>
+
+    <div class="transmissions-container">
+        <div class="transmissions-header">
+            <h1><i class="fas fa-broadcast-tower"></i> Прямые трансляции</h1>
+            <div class="sort-controls">
+                <button class="sort-btn active">Все</button>
+                <button class="sort-btn">Играют сейчас</button>
+                <button class="sort-btn">Популярные</button>
+            </div>
+        </div>
+
+        <div class="transmissions-grid" id="transmissionsGrid">
+            <!-- Трансляции будут загружаться через JavaScript -->
+        </div>
+
+        <div class="upcoming-transmissions">
+            <h2>Предстоящие трансляции</h2>
+            <div class="upcoming-list" id="upcomingList">
+                <!-- Будущие трансляции -->
+            </div>
+        </div>
+    </div>
+
+    <script src="transmissions.js"></script>
+</body>
+</html>
