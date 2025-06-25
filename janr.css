@@ -1,31 +1,166 @@
+/* Основные стили */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #171a21;
     color: #e5e5e5;
     margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+.Inoy-header {
+    background-color: #171a21;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #b8b6b4;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    margin-right: 15px;
+}
+
+.search-bar input {
+    background-color: #2b4252;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #5896be;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username-link {
+    color: #b8b6b4;
+    margin-right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.username-link:hover {
+    color: #67c1f5;
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
+
+/* Основной контент */
+.library-container {
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.library-header {
+    margin-bottom: 30px;
+}
+
+.library-header h1 {
+    color: #66c0f4;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Фильтры по жанрам */
+.genre-filter {
+    margin-bottom: 30px;
 }
 
 .genre-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .genre-btn {
     background-color: #2a475e;
     color: #c7d5e0;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
 }
 
 .genre-btn.active {
@@ -33,14 +168,25 @@ body {
     color: white;
 }
 
-.genre-btn:hover {
+.genre-btn:hover:not(.active) {
     background-color: #3d6b8e;
 }
 
+.game-count {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+/* Сетка игр */
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .game-card {
@@ -48,32 +194,41 @@ body {
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .game-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .game-card img {
     width: 100%;
-    height: 250px;
+    height: 140px;
     object-fit: cover;
+    display: block;
 }
 
 .game-info {
-    padding: 10px;
+    padding: 15px;
 }
 
 .game-info h3 {
-    margin: 0;
+    margin: 0 0 5px 0;
     color: #c7d5e0;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .game-info p {
-    margin: 5px 0;
+    margin: 0;
     color: #8f98a0;
-    font-size: 14px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Модальное окно */
@@ -85,27 +240,34 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 100;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .modal-content {
     background-color: #1b2838;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
-    max-width: 600px;
-    width: 80%;
+    max-width: 700px;
+    width: 100%;
     position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .close-btn {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 15px;
     font-size: 24px;
     cursor: pointer;
     color: #c7d5e0;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 .modal-image {
@@ -113,139 +275,49 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .modal-title {
     color: #66c0f4;
-    margin-top: 0;
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+.modal-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #8f98a0;
+    font-size: 0.9rem;
+}
+
+.modal-meta i {
+    color: #ffcc00;
 }
 
 .modal-description {
     color: #c7d5e0;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
-.modal-genre {
-    color: #8f98a0;
-    font-style: italic;
-}
-/* Шапка */
-        .steam-header {
-            background-color: #171a21;
-            padding: 10px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            position: relative;
-            z-index: 100;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .logo img {
-            height: 90px;
-        }
-
-        .main-nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        .main-nav li {
-            margin: 0 15px;
-        }
-
-        .main-nav a {
-            color: #b8b6b4;
-            font-size: 14px;
-        }
-
-        .main-nav a:hover {
-            color: #ffffff;
-        }
-
-        .user-actions {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-bar {
-            display: flex;
-            margin-right: 15px;
-        }
-
-        .search-bar input {
-            background-color: #2b4252;
-            border: none;
-            padding: 5px 10px;
-            color: white;
-            border-radius: 3px 0 0 3px;
-            width: 200px;
-        }
-
-        .search-bar button {
-            background-color: #5896be;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-        }
-
-        .user-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .username {
-            margin-right: 10px;
-            color: #b8b6b4;
-            font-size: 14px;
-        }
-
-        .avatar {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
-        .game-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.game-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-.game-info p {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-.game-info p span {
-    background-color: #1a3a58;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 12px;
-}
-.game-card[data-genre="shooter"]:hover {
-    border: 1px solid #ff4655; /* Красный, как в CS:GO */
-}
 .download-btn {
-    background-color: #5c7e10; /* Зелёный как в Steam */
+    background-color: #5c7e10;
     color: white;
     border: none;
-    padding: 12px 24px;
-    margin-top: 20px;
+    padding: 12px 25px;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .download-btn:hover {
@@ -254,4 +326,116 @@ body {
 
 .download-btn:active {
     transform: scale(0.98);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .user-actions {
+        margin-left: auto;
+    }
+    
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .modal-content {
+        padding: 15px;
+    }
+    
+    .modal-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .genre-tabs {
+        justify-content: center;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-title {
+        font-size: 1.4rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .user-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+}
+/* Стили для подменю */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a475e;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(-10px);
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #c7d5e0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #3d6b8e;
+    color: white;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .has-submenu {
+        position: static;
+    }
+    
+    .submenu {
+        width: 100%;
+        position: static;
+        display: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .has-submenu:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
 }
