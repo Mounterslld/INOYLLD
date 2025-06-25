@@ -5,42 +5,48 @@ const games = [
         title: "The Witcher 3: Wild Hunt",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
-        description: "Эпическая RPG от CD Projekt Red. Геральт из Ривии ищет пропавшую Цири, сражаясь с чудовищами и принимая морально сложные решения. Игра с открытым миром, богатым сюжетом и дополнениями «Hearts of Stone» и «Blood and Wine»."
+        description: "Эпическая RPG от CD Projekt Red. Геральт из Ривии ищет пропавшую Цири, сражаясь с чудовищами и принимая морально сложные решения. Игра с открытым миром, богатым сюжетом и дополнениями «Hearts of Stone» и «Blood and Wine».",
+        downloadLink: "https://www.thewitcher.com/ru/ru/witcher3"
     },
     {
         id: 2,
         title: "Baldur’s Gate 3",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg",
-        description: "Продолжение легендарной серии RPG от Larian Studios. Глубокие диалоги, тактические бои на основе D&D 5e и свобода выбора, которая влияет на мир."
+        description: "Продолжение легендарной серии RPG от Larian Studios. Глубокие диалоги, тактические бои на основе D&D 5e и свобода выбора, которая влияет на мир.",
+        downloadLink: "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"
     },
     {
         id: 3,
         title: "Divinity: Original Sin 2",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/header.jpg",
-        description: "Лучшая cRPG современности. Кооператив на 4 игрока, интерактивный мир, где можно поджигать воду или телепортировать врагов в лаву."
+        description: "Лучшая cRPG современности. Кооператив на 4 игрока, интерактивный мир, где можно поджигать воду или телепортировать врагов в лаву.",
+        downloadLink: "https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/"   
     },
     {
         id: 4,
         title: "Dragon Age: Origins",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/47810/header.jpg",
-        description: "Классика BioWare. Тактические бои, ветвящийся сюжет и запоминающиеся спутники вроде Морриган и Алистера."
+        description: "Классика BioWare. Тактические бои, ветвящийся сюжет и запоминающиеся спутники вроде Морриган и Алистера.",
+        downloadLink: "https://www.ea.com/ru-ru/games/dragon-age/dragon-age-origins"
     },
     {
         id: 5,
         title: "Mass Effect: Legendary Edition",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/header.jpg",
-        description: "Трилогия в 4K. Шепард, Реперы и романсы с инопланетянами. Влияние решений на все три игры."
+        description: "Трилогия в 4K. Шепард, Реперы и романсы с инопланетянами. Влияние решений на все три игры.",
+        downloadLink: "https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/"
     },
     {
         id: 6,
         title: "Fallout: New Vegas",
         genre: "rpg",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/22380/header.jpg",
-        description: "Лучший Fallout по мнению фанатов. Пустоши Мохаве, война между NCR и Легионом, и тонны чёрного юмора."
+        description: "Лучший Fallout по мнению фанатов. Пустоши Мохаве, война между NCR и Легионом, и тонны чёрного юмора.",
+        downloadLink: "https://store.steampowered.com/app/22490/Fallout_New_Vegas/"
     },
     // Шутеры
     {
@@ -48,6 +54,18 @@ const games = [
         title: "Counter-Strike 2",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+        description: "Киберспортивный хит Valve. Деффы против террористов на картах Dust II и Mirage.",
+        downloadLink: ""        
+    },    
+    {
+        id: 8,
+        title: "Lions Of War",
+        genre: "shooter",
+        image: "https://a.imgfoto.host/2025/06/22/photo_2025-04-13_14-20-24.md.jpeg",
+        description: "Данная игра повествует войну Леонида",
+        downloadLink: "https://cloud.mail.ru/public/foDt/GGGcTumCW"
+    },
+    
         description: "Киберспортивный хит Valve. Деффы против террористов на картах Dust II и Mirage."
     },    
     {
@@ -64,7 +82,8 @@ const games = [
         title: "Stellaris",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg",
-        description: "Глобальная стратегия с исследованием галактики и уничтожением разумных рас (по желанию)."
+        description: "Глобальная стратегия с исследованием галактики и уничтожением разумных рас (по желанию).",
+        downloadLink: ""
     },
     // Инди
     {
@@ -72,63 +91,72 @@ const games = [
         title: "Hollow Knight",
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg",
-        description: "Метроидвания с атмосферой и сложными боссами. Червячки с мечами!"
+        description: "Метроидвания с атмосферой и сложными боссами. Червячки с мечами!",
+        downloadLink: ""
     },
     {
         id: 11,
         title: "HUNT: SHOWDOWN 1896",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/594650/header.jpg",
-        description: "Хардкорный PvPvE-шутер с атмосферой Луизианских болот. Охота на монстров, добыча трофеев и побег — пока вас не убили другие охотники."
+        description: "Хардкорный PvPvE-шутер с атмосферой Луизианских болот. Охота на монстров, добыча трофеев и побег — пока вас не убили другие охотники.",
+        downloadLink: ""
     },
     {
         id: 12,
         title: "Battlefield V",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg",
-        description: "Масштабные сражения Второй мировой с разрушаемостью и тактическими режимами. «Роттердам» и «Огненный шторм» ждут!"
+        description: "Масштабные сражения Второй мировой с разрушаемостью и тактическими режимами. «Роттердам» и «Огненный шторм» ждут!",
+        downloadLink: ""
     },
     {
         id: 13,
         title: "Arma 3",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/107410/header.jpg",
-        description: "Симулятор военных действий с открытым миром. Реалистичная баллистика, моды вроде «DayZ» и «Exile», кооперативные миссии."
+        description: "Симулятор военных действий с открытым миром. Реалистичная баллистика, моды вроде «DayZ» и «Exile», кооперативные миссии.",
+        downloadLink: ""
     },
     {
         id: 14,
         title: "Arma Reforger",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1874880/header.jpg",
-        description: "Обновлённая версия классики с движком Enfusion. Конфликт на острове Эверон в режимах PvP и PvE."
+        description: "Обновлённая версия классики с движком Enfusion. Конфликт на острове Эверон в режимах PvP и PvE.",
+        downloadLink: ""
     },
     {
         id: 15,
         title: "Deep Rock Galactic",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/548430/header.jpg",
-        description: "Кооперативный шутер про гномов-шахтёров. Добывайте минералы, отбивайтесь от жуков и кричите «За Камень и Камень!»."
+        description: "Кооперативный шутер про гномов-шахтёров. Добывайте минералы, отбивайтесь от жуков и кричите «За Камень и Камень!».",
+        downloadLink: ""
     },
     {
         id: 16,
         title: "GTFO",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/493520/header.jpg",
-        description: "Хоррор-шутер для 4 игроков. Вы — заключённые, которых отправили в подземный комплекс с мутантами. Тишина — ваше оружие."
+        description: "Хоррор-шутер для 4 игроков. Вы — заключённые, которых отправили в подземный комплекс с мутантами. Тишина — ваше оружие.",
+        downloadLink: ""
     },
     {
         id: 17,
         title: "Overwatch 2",
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
-        description: "Командный hero-шутер от Blizzard. Новые герои, режим «Push» и ежеквартальные ивенты."
+        description: "Командный hero-шутер от Blizzard. Новые герои, режим «Push» и ежеквартальные ивенты.",
+        downloadLink: ""
     },
     {
         id: 18,
         title: "Bodycam",
         genre: "shooter",
         image: "https://avatars.mds.yandex.net/i?id=c77076b2393f0b6a653803e0823ac00b_l-5287893-images-thumbs&n=13",
-        description: "Хардкорный шутер от первого лица с гиперреалистичной графикой. Каждый выстрел на вес золота."
+        description: "Хардкорный шутер от первого лица с гиперреалистичной графикой. Каждый выстрел на вес золота.",
+        downloadLink: ""
     },
     {
         id: 19,
@@ -275,8 +303,7 @@ const games = [
         downloadLink: "https://store.steampowered.com/app/1092790"
     }
 ];
-
-// Заполняем сетку игр
+// Получаем элементы DOM
 const gamesGrid = document.getElementById('gamesGrid');
 const modal = document.getElementById('gameModal');
 const modalTitle = document.querySelector('.modal-title');
@@ -284,43 +311,82 @@ const modalImage = document.querySelector('.modal-image');
 const modalDescription = document.querySelector('.modal-description');
 const modalGenre = document.querySelector('.modal-genre');
 const closeBtn = document.querySelector('.close-btn');
+const downloadBtn = document.querySelector('.download-btn'); // Добавлено получение кнопки
 
+// Обновляем счетчики игр по жанрам
+function updateGenreCounts() {
+    const counts = {
+        all: games.length,
+        rpg: games.filter(game => game.genre === 'rpg').length,
+        shooter: games.filter(game => game.genre === 'shooter').length,
+        strategy: games.filter(game => game.genre === 'strategy').length,
+        indie: games.filter(game => game.genre === 'indie').length
+    };
+
+    document.querySelector('[data-genre="all"] .game-count').textContent = counts.all;
+    document.querySelector('[data-genre="rpg"] .game-count').textContent = counts.rpg;
+    document.querySelector('[data-genre="shooter"] .game-count').textContent = counts.shooter;
+    document.querySelector('[data-genre="strategy"] .game-count').textContent = counts.strategy;
+    document.querySelector('[data-genre="indie"] .game-count').textContent = counts.indie;
+}
+
+// Создаем карточку игры
+function createGameCard(game) {
+    const gameCard = document.createElement('div');
+    gameCard.className = 'game-card';
+    gameCard.innerHTML = `
+        <img src="${game.image}" alt="${game.title}">
+        <div class="game-info">
+            <h3>${game.title}</h3>
+            <p>${game.genre.toUpperCase()}</p>
+        </div>
+    `;
+    gameCard.addEventListener('click', () => openModal(game));
+    return gameCard;
+}
+
+// Отображаем игры в сетке
 function renderGames(genre = 'all') {
     gamesGrid.innerHTML = '';
     const filteredGames = genre === 'all' ? games : games.filter(game => game.genre === genre);
     
     filteredGames.forEach(game => {
-        const gameCard = document.createElement('div');
-        gameCard.className = 'game-card';
-        gameCard.innerHTML = `
-            <img src="${game.image}" alt="${game.title}">
-            <div class="game-info">
-                <h3>${game.title}</h3>
-                <p>${game.genre.toUpperCase()}</p>
-            </div>
-        `;
-        gameCard.addEventListener('click', () => openModal(game));
-        gamesGrid.appendChild(gameCard);
+        gamesGrid.appendChild(createGameCard(game));
     });
 }
 
-// Открытие модального окна
+// Открываем модальное окно с информацией об игре
 function openModal(game) {
     modalTitle.textContent = game.title;
     modalImage.src = game.image;
     modalDescription.textContent = game.description;
     modalGenre.textContent = `Жанр: ${game.genre.toUpperCase()}`;
+    
+    // Настраиваем кнопку скачивания
+    if (game.downloadLink) {
+        downloadBtn.style.display = 'flex';
+        downloadBtn.onclick = (e) => {
+            e.stopPropagation();
+            window.open(game.downloadLink, '_blank');
+        };
+    } else {
+        downloadBtn.style.display = 'none';
+    }
+    
     modal.style.display = 'flex';
 }
 
-// Закрытие модального окна
-closeBtn.addEventListener('click', () => {
+// Закрываем модальное окно
+function closeModal() {
     modal.style.display = 'none';
-});
+}
+
+// Обработчики событий
+closeBtn.addEventListener('click', closeModal);
 
 window.addEventListener('click', (e) => {
     if (e.target === modal) {
-        modal.style.display = 'none';
+        closeModal();
     }
 });
 
@@ -333,5 +399,18 @@ document.querySelectorAll('.genre-btn').forEach(btn => {
     });
 });
 
-// Первоначальная загрузка
-renderGames();
+// Инициализация при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    updateGenreCounts();
+    renderGames();
+});
+// Для мобильного меню
+document.querySelectorAll('.has-submenu > a').forEach(item => {
+    item.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});

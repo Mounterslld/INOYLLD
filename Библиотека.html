@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOY - Игровая библиотека</title>
+    <link rel="stylesheet" href="janr.css">
+</head>
+<body>
+    <header class="Inoy-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://a.imgfoto.host/2025/06/21/AddText_06-21-05.49.34.md.png" alt="INOY">
+            </div>
+            <nav class="main-nav">
+    <ul>
+        <li><a href="Иной.html" class="nav-link" data-tab="store">Магазин</a></li>
+        <li><a href="новости.html" class="nav-link" data-tab="library">Новости</a></li>
+        <li><a href="Сообщество.html" class="nav-link" data-tab="community">Сообщество</a></li>
+        <li class="has-submenu">
+            <a href="Библиотека.html" data-tab="profile">Библиотека</a>
+            <div class="submenu">
+                <a href="Трансляции.html" class="submenu-item">Трансляции</a>
+                <a href="#" class="submenu-item">Мои игры</a>
+                <a href="#" class="submenu-item">Избранное</a>
+            </div>
+        </li>
+        <li><a href="Разработчики.html" class="nav-link" data-tab="profile">Профили разработчиков</a></li>
+    </ul>
+</nav>
+            <div class="user-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <a href="Профиль.html" class="username-link">Игрок123</a>
+                    <img src="https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg" alt="Аватар" class="avatar">
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <a href="Регистрация.html" class="login-btn">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="library-container">
+        <div class="library-header">
+            <h1>Библиотека</h1>
+        </div>
+        <div class="genre-filter">
+            <div class="genre-tabs">
+                <button class="genre-btn active" data-genre="all">
+                    <span>Все игры</span>
+                    <span class="game-count">0</span>
+                </button>
+                <button class="genre-btn" data-genre="rpg">
+                    <span>RPG</span>
+                    <span class="game-count">0</span>
+                </button>
+                <button class="genre-btn" data-genre="shooter">
+                    <span>Шутеры</span>
+                    <span class="game-count">0</span>
+                </button>
+                <button class="genre-btn" data-genre="strategy">
+                    <span>Стратегии</span>
+                    <span class="game-count">0</span>
+                </button>
+                <button class="genre-btn" data-genre="indie">
+                    <span>Инди</span>
+                    <span class="game-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <!-- Карточки игр будут здесь -->
+        </div>
+    </div>
+    
+    <!-- Модальное окно -->
+<div class="modal" id="gameModal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img class="modal-image" src="" alt="">
+        <h2 class="modal-title"></h2>
+        <div class="modal-meta">
+            <span class="modal-genre"></span>
+            <span class="modal-rating"><i class="fas fa-star"></i> 0.0</span>
+        </div>
+        <p class="modal-description"></p>
+        <button class="download-btn">Скачать <i class="fas fa-download"></i></button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
