@@ -66,16 +66,6 @@ const games = [
         downloadLink: "https://cloud.mail.ru/public/foDt/GGGcTumCW"
     },
     
-        description: "Киберспортивный хит Valve. Деффы против террористов на картах Dust II и Mirage."
-    },    
-    {
-        id: 8,
-        title: "Lions Of War",
-        genre: "shooter",
-        image: "https://a.imgfoto.host/2025/06/22/photo_2025-04-13_14-20-24.md.jpeg",
-        description: "Данная игра повествует войну Леонида"
-    },
-    
     // Стратегии
     {
         id: 9,
