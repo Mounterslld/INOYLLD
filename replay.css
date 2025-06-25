@@ -133,12 +133,23 @@
 }
 
 .transmission-title {
-    font-size: 1.1rem;
-    margin: 0;
+    /* Стандартное свойство */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    
+    /* Экспериментальное свойство для Firefox */
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: 2;
+    
+    /* Стандарты */
+    display: box;
+    line-clamp: 2;
+    box-orient: vertical;
+    
     overflow: hidden;
+    max-height: 3em; /* fallback для старых браузеров */
 }
 
 .upcoming-transmissions h2 {
