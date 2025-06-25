@@ -5,8 +5,8 @@ const liveTransmissions = [
         user: "StreamerPro",
         title: "Прохождение Cyberpunk 2077: Phantom Liberty",
         game: "Cyberpunk 2077",
-        avatar: "https://i.imgur.com/streamer1.jpg",
-        thumbnail: "https://i.imgur.com/cyberpunk-thumb.jpg",
+        avatar: "https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg",
+        thumbnail: "https://avatars.mds.yandex.net/i?id=06790461fdf39c5317c96a3e3980a0d48c724c0b397ffb27-5433970-images-thumbs&n=13",
         viewers: 1245,
         isLive: true
     },
@@ -15,8 +15,8 @@ const liveTransmissions = [
         user: "GameMaster",
         title: "Speedrun Dark Souls III - World Record Attempt",
         game: "Dark Souls III",
-        avatar: "https://i.imgur.com/streamer2.jpg",
-        thumbnail: "https://i.imgur.com/darksouls-thumb.jpg",
+        avatar: "https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg",
+        thumbnail: "https://avatars.mds.yandex.net/i?id=05490632327b0ad4e14a1e040e9c79fff54b1eea-5449619-images-thumbs&n=13",
         viewers: 876,
         isLive: true
     },
@@ -25,8 +25,8 @@ const liveTransmissions = [
         user: "EsportsFan",
         title: "Турнир по Dota 2 - Финал чемпионата",
         game: "Dota 2",
-        avatar: "https://i.imgur.com/streamer3.jpg",
-        thumbnail: "https://i.imgur.com/dota2-thumb.jpg",
+        avatar: "https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg",
+        thumbnail: "https://avatars.mds.yandex.net/i?id=ff8f417050403581b865878d1617ad1a1c47846b-5220447-images-thumbs&n=13",
         viewers: 2543,
         isLive: true
     }
@@ -38,8 +38,8 @@ const upcomingTransmissions = [
         user: "ProGamer",
         title: "Новый сезон в Apex Legends",
         game: "Apex Legends",
-        avatar: "https://i.imgur.com/streamer4.jpg",
-        date: "15.10",
+        avatar: "https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg",
+        date: "29.10",
         time: "20:00"
     },
     {
@@ -47,8 +47,17 @@ const upcomingTransmissions = [
         user: "RetroLover",
         title: "Ретро вечер: играем в старые RPG",
         game: "Baldur's Gate",
-        avatar: "https://i.imgur.com/streamer5.jpg",
-        date: "16.10",
+        avatar: "https://a.imgfoto.host/2025/06/21/photo_2025-06-21_17-32-53.md.jpeg",
+        date: "28.10",
+        time: "18:00"
+    },
+        {
+        id: 5,
+        user: "Kklamix",
+        title: "Играем в майн с друзьями",
+        game: "MINECRAFT",
+        avatar: "https://i.pinimg.com/736x/09/e9/8d/09e98d99440749aa978e4db4cf6daca2.jpg",
+        date: "26.10",
         time: "18:00"
     }
 ];
@@ -98,7 +107,7 @@ function renderUpcoming() {
         card.innerHTML = `
             <div class="upcoming-time">
                 <span class="upcoming-day">${day}</span>
-                <span class="upcoming-month">окт</span>
+                <span class="upcoming-month">июнь</span>
             </div>
             <img src="${transmission.avatar}" alt="${transmission.user}" class="user-avatar">
             <div class="upcoming-info">
