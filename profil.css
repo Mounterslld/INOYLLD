@@ -1,0 +1,919 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #e5e5e5;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка профиля */
+.profile-header {
+    background-color: #171a21;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-avatar {
+    width: 184px;
+    height: 184px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid #67c1f5;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-status {
+    color: #67c1f5;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile-description {
+    color: #c6d4df;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: rgba(103, 193, 245, 0.2);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* Контент профиля */
+.profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Левая колонка */
+.left-column {
+    flex: 1;
+}
+
+/* Правая колонка */
+.right-column {
+    width: 300px;
+}
+
+/* Блоки */
+.block {
+    background-color: #171a21;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.block-title {
+    color: #67c1f5;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #2a3f5a;
+}
+
+/* Публикации */
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2a3f5a;
+}
+
+.post:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.post-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-author {
+    color: #67c1f5;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.post-date {
+    color: #556772;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.post-content {
+    color: #c6d4df;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.post-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.post-action {
+    color: #67c1f5;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Друзья */
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.friend-item {
+    text-align: center;
+}
+
+.friend-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto 5px;
+}
+
+.friend-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.friend-name {
+    color: #67c1f5;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Игры */
+.game-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.game-item:last-child {
+    margin-bottom: 0;
+}
+
+.game-cover {
+    width: 64px;
+    height: 32px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.game-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.game-hours {
+    color: #556772;
+    font-size: 12px;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #799905 5%, #536904 95%);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #8fb305 5%, #6a8504 95%);
+}
+/* Шапка */
+        .Inoy-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+                .news-footer {
+            padding: 10px 20px;
+            background: #1a252f;
+            text-align: right;
+            font-size: 12px;
+            color: #8f98a0;
+        }
+
+        .news-footer a {
+            color: #66c0f4;
+            text-decoration: none;
+        }
+
+        .news-footer a:hover {
+            color: #fff;
+        }
+        /* Подвал */
+        .INOY-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
+.username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
+/* Стили для подменю */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a475e;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(-10px);
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #c7d5e0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #3d6b8e;
+    color: white;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .has-submenu {
+        position: static;
+    }
+    
+    .submenu {
+        width: 100%;
+        position: static;
+        display: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .has-submenu:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #e5e5e5;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка профиля */
+.profile-header {
+    background-color: #171a21;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-avatar {
+    width: 184px;
+    height: 184px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid #67c1f5;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-status {
+    color: #67c1f5;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile-description {
+    color: #c6d4df;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: rgba(103, 193, 245, 0.2);
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* Контент профиля */
+.profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Левая колонка */
+.left-column {
+    flex: 1;
+}
+
+/* Правая колонка */
+.right-column {
+    width: 300px;
+}
+
+/* Блоки */
+.block {
+    background-color: #171a21;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.block-title {
+    color: #67c1f5;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #2a3f5a;
+}
+
+/* Публикации */
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2a3f5a;
+}
+
+.post:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.post-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-author {
+    color: #67c1f5;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.post-date {
+    color: #556772;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.post-content {
+    color: #c6d4df;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.post-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.post-action {
+    color: #67c1f5;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Друзья */
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.friend-item {
+    text-align: center;
+}
+
+.friend-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto 5px;
+}
+
+.friend-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.friend-name {
+    color: #67c1f5;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Игры */
+.game-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.game-item:last-child {
+    margin-bottom: 0;
+}
+
+.game-cover {
+    width: 64px;
+    height: 32px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.game-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.game-hours {
+    color: #556772;
+    font-size: 12px;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #799905 5%, #536904 95%);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #8fb305 5%, #6a8504 95%);
+}
+/* Шапка */
+        .Inoy-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+                .news-footer {
+            padding: 10px 20px;
+            background: #1a252f;
+            text-align: right;
+            font-size: 12px;
+            color: #8f98a0;
+        }
+
+        .news-footer a {
+            color: #66c0f4;
+            text-decoration: none;
+        }
+
+        .news-footer a:hover {
+            color: #fff;
+        }
+        /* Подвал */
+        .INOY-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
+.username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
