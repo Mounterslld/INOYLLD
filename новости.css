@@ -1,0 +1,306 @@
+/* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #18232b;
+            color: #e5e5e5;
+        }
+
+        a {
+            color: #67c1f5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* Шапка */
+        .INOY-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .main-nav li {
+            margin: 0 15px;
+        }
+
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        .search-bar input {
+            background-color: #2b4252;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        /* Основной контент */
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Блок новостей */
+        .news-container {
+            width: 100%;
+            margin: 30px auto;
+            background: #16202d;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .news-header {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 15px 20px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #2d3f56;
+        }
+
+        .news-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #2d3f56;
+            transition: background 0.2s;
+        }
+
+        .news-item:hover {
+            background: #1e2a3a;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-title {
+            color: #66c0f4;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .news-title:hover {
+            color: #fff;
+        }
+
+        .news-date {
+            color: #8f98a0;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .news-description {
+            color: #b8b6b4;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .news-footer {
+            padding: 10px 20px;
+            background: #1a252f;
+            text-align: right;
+            font-size: 12px;
+            color: #8f98a0;
+        }
+
+        .news-footer a {
+            color: #66c0f4;
+            text-decoration: none;
+        }
+
+        .news-footer a:hover {
+            color: #fff;
+        }
+        /* Подвал */
+        .INOY-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
+.username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
+/* Стили для подменю */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a475e;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(-10px);
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #c7d5e0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #3d6b8e;
+    color: white;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .has-submenu {
+        position: static;
+    }
+    
+    .submenu {
+        width: 100%;
+        position: static;
+        display: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .has-submenu:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+}
