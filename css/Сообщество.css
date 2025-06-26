@@ -1,0 +1,476 @@
+/* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #1b2838;
+            color: #e5e5e5;
+        }
+        
+        a {
+            color: #67c1f5;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Шапка */
+        .Inoy-header {
+            background-color: #171a21;
+            padding: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo img {
+            height: 90px;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .main-nav li {
+            margin: 0 15px;
+        }
+        
+        .main-nav a {
+            color: #b8b6b4;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        
+        .main-nav a:hover {
+            color: #ffffff;
+        }
+        
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-bar {
+            display: flex;
+            margin-right: 15px;
+        }
+        
+        .search-bar input {
+            background-color: #316282;
+            border: none;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            width: 200px;
+        }
+        
+        .search-bar button {
+            background-color: #5896be;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+        
+        .user-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .username {
+            margin-right: 10px;
+            color: #b8b6b4;
+            font-size: 14px;
+        }
+        
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        /* Основной контент */
+        .community-page {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        /* Левая колонка - профиль сообщества */
+        .community-profile {
+            width: 280px;
+            margin-right: 20px;
+            background: #171a21;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .community-banner {
+            height: 150px;
+            background: linear-gradient(rgba(30, 59, 114, 0), rgba(3, 6, 10, 0.548)), 
+                        url('https://a.imgfoto.host/2025/06/22/h-SVELaM_BPIr9en93yGxwh5ol89D-DMcvtzSvXrxinDO_IXYcp7COarHnIMzFd8tMXVGkpb2NwGvNIOnvtjPWgN.md.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        
+        .community-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .community-info {
+            padding: 60px 15px 15px;
+        }
+        
+        .community-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .community-members {
+            color: #8f98a0;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .community-description {
+            font-size: 13px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+        
+        .community-actions {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border-radius: 2px;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .btn-subscribe {
+            background: #5c7e10;
+            color: white;
+        }
+        
+        .btn-subscribe:hover {
+            background: #6e8c1f;
+        }
+        
+        .btn-invite {
+            background: #2a475e;
+            color: #67c1f5;
+        }
+        
+        .btn-invite:hover {
+            background: #316282;
+        }
+        
+        /* Центральная колонка - лента сообщества */
+        .community-feed {
+            flex: 1;
+        }
+        
+        .post-form {
+            background: #171a21;
+            padding: 15px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        
+        .post-input {
+            width: 100%;
+            background: #316282;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            color: white;
+            margin-bottom: 10px;
+            resize: none;
+        }
+        
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .post-attachments {
+            display: flex;
+        }
+        
+        .attachment-btn {
+            background: #2a475e;
+            color: #67c1f5;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .post-submit {
+            background: #5c7e10;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .post {
+            background: #171a21;
+            padding: 15px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .post-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .post-author {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        
+        .post-date {
+            color: #8f98a0;
+            font-size: 12px;
+        }
+        
+        .post-content {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .post-image {
+            max-width: 100%;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+        
+        .post-footer {
+            display: flex;
+            border-top: 1px solid #2a475e;
+            padding-top: 10px;
+        }
+        
+        .post-action {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            color: #8f98a0;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        
+        .post-action i {
+            margin-right: 5px;
+        }
+        
+        /* Правая колонка - рекомендации */
+        .community-sidebar {
+            width: 280px;
+            margin-left: 20px;
+        }
+        
+        .sidebar-block {
+            background: #171a21;
+            border-radius: 3px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-title {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #67c1f5;
+        }
+        
+        .recommended-community {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a475e;
+        }
+        
+        .recommended-community:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .recommended-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .recommended-name {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        
+        .recommended-members {
+            color: #8f98a0;
+            font-size: 12px;
+        }
+        /* Подвал */
+        .INOY-footer {
+            background-color: #171a21;
+            padding: 20px 0;
+            margin-top: 70px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links li {
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a {
+            color: #b8b6b4;
+            font-size: 12px;
+        }
+
+        .footer-copyright p {
+            color: #666;
+            font-size: 11px;
+        }
+.username-link {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчёркивание */
+    transition: color 0.2s ease; /* Плавное изменение цвета */
+}
+
+.username-link:hover {
+    color: #67c1f5; /* Цвет при наведении (как в Steam) */
+    text-decoration: none; /* Гарантирует отсутствие подчёркивания */
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #2a475e;
+    color: #c7d4df;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d6b8e;
+    color: white;
+}
+/* Стили для подменю */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a475e;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translateY(-10px);
+}
+
+.has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #c7d5e0;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submenu-item:hover {
+    background-color: #3d6b8e;
+    color: white;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .has-submenu {
+        position: static;
+    }
+    
+    .submenu {
+        width: 100%;
+        position: static;
+        display: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .has-submenu:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+}
