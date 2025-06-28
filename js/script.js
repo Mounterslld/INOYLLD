@@ -73,7 +73,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg",
         description: "Глобальная стратегия с исследованием галактики и уничтожением разумных рас (по желанию).",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/281990/Stellaris/"
     },
     // Инди
     {
@@ -170,7 +170,7 @@ const games = [
         genre: "strategy",
         image: "https://avatars.mds.yandex.net/i?id=b1182189cd5f8e3994b50f0d81063e23_l-8200828-images-thumbs&n=13",
         description: "Тактическая стратегия о современных конфликтах. Реалистичные боевые единицы и динамичные сражения.",
-        downloadLink: "https://store.steampowered.com/app/1392080"
+        downloadLink: "https://store.steampowered.com/app/1604270/Broken_Arrow/"
     },
     {
         id: 22,
@@ -291,7 +291,48 @@ const games = [
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1092790/header.jpg",
         description: "Карточная игра с психоделическим хоррором. Сбегите из избушки Сумасшедшего Лесника... если сможете.",
         downloadLink: "https://store.steampowered.com/app/1092790"
-    }
+    },
+    {
+        id: 37,
+        title: "Dark Souls III",
+        genre: "rpg",
+        image: "https://avatars.mds.yandex.net/i?id=765b89e6aecf4d23047c6a33382bdf58_l-4726270-images-thumbs&n=13",
+        description: "действие происходит в королевстве Лотрик. Первое Пламя, источник жизни, поддерживающий Эру Огня в королевствах, угасает. Тьма начинает порождать нежить и Полых — проклятых существ, которые воскресают после смерти и теряют разум.»",
+        downloadLink: "https://www.bandainamcoent.com/games/dark-souls-iii"
+    },
+    //RPG
+    {
+        id: 38,
+        title: "The Elder Scrolls V: Skyrim",
+        genre: "rpg",
+        image: "https://avatars.mds.yandex.net/i?id=33c9961746a9805c47243ce11843da9e67ca592f-4120553-images-thumbs&n=13",
+        description: "Действие происходит в провинции Скайрим на материке Тамриэль спустя двести лет после событий предыдущей игры серии — The Elder Scrolls IV: Oblivion.».",
+        downloadLink: "https://steambuy.com/steam/the-elder-scrolls-v-skyrim/?utm_source=yandex&utm_medium=cpc&utm_campaign=Разное%2026-02-2020%2009%3A57%3A25&utm_content=8743523338&utm_term=The%20Elder%20Scrolls%20V%20Skyrim&yclid=6062411811045244927"
+    },
+        {
+        id: 39,
+        title: "Elden Ring",
+        genre: "rpg",
+        image: "https://avatars.mds.yandex.net/get-entity_search/5101278/1170524184/S600xU_2x",
+        description: "Действие происходит в Междуземье — стране, которой с давних времён правила королева Марика Вечная. Источником её власти было Кольцо Элдена — волшебный объект, состоящий из нескольких Великих Рун, который диктовал законы мироздания.».",
+        downloadLink: "https://www.bandainamcoent.com/games/elden-ring"
+    },
+        {
+        id: 40,
+        title: "Monster Hunter: World",
+        genre: "rpg",
+        image: "https://avatars.mds.yandex.net/i?id=96682421ab3a50a4e7982b67bd2dc44e_l-4824334-images-thumbs&ref=rim&n=13&w=1280&h=720",
+        description: " игрок берёт на себя роль Охотника, который отправляется в Новый Свет в составе Пятого флота. Исследовательская комиссия поручает Охотнику задания по охоте на монстров и захвату или уничтожению их для исследовательских целей.».",
+        downloadLink: "https://www.monsterhunter.com/world/us/"
+    },
+    {
+        id: 41,
+        title: "Empire of the Ants",
+        genre: "strategy",
+        image: "https://avatars.mds.yandex.net/i?id=e5bf34f8ae6af54ca150f37f423a2f15_l-5887817-images-thumbs&n=13",
+        description: "Завоёвывайте муравейники врагов и ведите свою колонию сквозь полный опасностей лес в этой новаторской стратегии в реальном времени.",
+        downloadLink: "https://store.steampowered.com/app/2287330/Empire_of_the_Ants/"
+    },
 ];
 // Получаем элементы DOM
 const gamesGrid = document.getElementById('gamesGrid');
