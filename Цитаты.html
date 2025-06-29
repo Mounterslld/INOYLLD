@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитаты Михаэля - Архитектора Вселенных</title>
+    <link rel="stylesheet" href="css/цитата.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Звездный фон -->
+    <div class="stars" id="stars"></div>
+    <!-- Парящие чашки чая -->
+    <div id="tea-container"></div>
+    <!-- Шапка -->
+    <header class="portal-header">
+        <div class="header-container">
+            <div class="portal-logo">Архив <span>Михаэля</span></div>
+            <a href="Tempestigma.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Назад в Портал
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Заголовок -->
+        <div class="main-title">
+            <h1>Цитаты Михаэля</h1>
+            <p>Создателя Вселенных, Хранителя Времени и Любителя Чая</p>
+        </div>
+        
+        <!-- Категории -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">
+                <i class="fas fa-star"></i> Все цитаты
+            </button>
+            <button class="category-btn" data-category="philosophical">
+                <i class="fas fa-brain"></i> Философские
+            </button>
+            <button class="category-btn" data-category="sarcastic">
+                <i class="fas fa-grin-tongue-wink"></i> Саркастичные
+            </button>
+            <button class="category-btn" data-category="wise">
+                <i class="fas fa-crown"></i> Мудрые
+            </button>
+            <button class="category-btn" data-category="absurd">
+                <i class="fas fa-hat-wizard"></i> Абсурдные
+            </button>
+            <button class="category-btn" data-category="time">
+                <i class="fas fa-clock"></i> О времени
+            </button>
+            <button class="category-btn" data-category="self">
+                <i class="fas fa-user-astronaut"></i> О себе
+            </button>
+        </div>
+        
+        <!-- Цитаты -->
+        <div class="quotes-container" id="quotes-container">
+            <!-- Философские и загадочные -->
+            <div class="quote-card" data-category="philosophical">
+                <div class="quote-text">
+                    Время — это не река, а лабиринт. И я знаю все его повороты... кроме одного. Интересно, куда он ведёт?
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Философские</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="philosophical">
+                <div class="quote-text">
+                    Вы спрашиваете, кто я? Я — вопрос, на который вы никогда не найдёте ответ. И это прекрасно.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Философские</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="philosophical">
+                <div class="quote-text">
+                    Реальность — это просто книга, а я... я тот, кто иногда меняет в ней слова.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Философские</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="philosophical">
+                <div class="quote-text">
+                    Если бы вы знали, сколько раз вы уже задавали этот вопрос... Ах да, вы не помните. Как мило.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Философские</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Саркастичные и шутливые -->
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    О, вы снова всё испортили? Не волнуйтесь, у меня есть кнопка "перезапуск". Правда, я её потерял... Шучу. Или нет?
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Вы думаете, это случайность? Как трогательно. Я люблю вашу наивность.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Да, я мог бы объяснить всё прямо сейчас... но где тогда будет веселье?
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Ошибки? Нет, это не ошибки. Это... творческий процесс. Хотя, с вашей точки зрения, да, ошибки.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Мудрые, но с намёком на угрозу -->
+            <div class="quote-card" data-category="wise">
+                <div class="quote-text">
+                    Каждое ваше решение создаёт новую вселенную. Жаль, что большинство из них — скучные.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Мудрые</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="wise">
+                <div class="quote-text">
+                    Вы хотите изменить прошлое? Тогда будьте готовы к тому, что будущее изменит вас.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Мудрые</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="wise">
+                <div class="quote-text">
+                    Я дал вам свободу выбора. Но помните: даже хаос имеет свои правила.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Мудрые</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="wise">
+                <div class="quote-text">
+                    Вы играете в шахматы, а я... я переставляю доску.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Мудрые</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Абсурдные и забавные -->
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Знаете, почему время такое капризное? Потому что у него нет часов.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Чай — это жидкость времени. Если выпить его достаточно, можно увидеть будущее. Или просто уснуть.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Я создал эту вселенную за выходные. Видите эту галактику? Она у меня случайно капнула.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Если исчезнет время, что будет с дедлайнами?.. О, какая досада.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- О времени и пространстве -->
+            <div class="quote-card" data-category="time">
+                <div class="quote-text">
+                    Время не лечит. Оно просто отвлекает, пока я чиню реальность.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О времени</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="time">
+                <div class="quote-text">
+                    Вы говорите: "Это невозможно". А я просто поворачиваю время вспять и делаю это.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О времени</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="time">
+                <div class="quote-text">
+                    Пространство — это складка на ткани мироздания. Иногда я её разглаживаю... иногда рву.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О времени</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="time">
+                <div class="quote-text">
+                    Знаете, почему прошлое нельзя изменить? Потому что я уже всё перепробовал.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О времени</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- О себе и своей роли -->
+            <div class="quote-card" data-category="self">
+                <div class="quote-text">
+                    Я не бог. Боги просят веры. Я же просто даю факты... иногда.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О себе</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="self">
+                <div class="quote-text">
+                    Меня называют Создателем. Но правда в том, что я просто первый, кто не испугался хаоса.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О себе</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="self">
+                <div class="quote-text">
+                    Если бы я был злодеем, у вас не было бы шансов. К счастью, я просто люблю интересные истории.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О себе</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="self">
+                <div class="quote-text">
+                    Я не управляю вселенными. Я просто слежу, чтобы они не развалились, пока вы все тут экспериментируете.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">О себе</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Абсурдные и загадочные -->
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Если бы у меня был рубль за каждый раз, когда вселенная почти разрушалась... У меня было бы много рублей. Но зачем они мне?
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Иногда я закрываю глаза, и где-то исчезает звезда. Не потому что я так решил. Просто... совпадение.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Вы когда-нибудь задумывались, почему сны кажутся реальными? Потому что иногда я забываю выключить режим редактирования.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="absurd">
+                <div class="quote-text">
+                    Моя любимая буква? "Ω". Потому что с неё начинается "Ой, что сейчас было?".
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Абсурдные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Шутки с намёком -->
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Я мог бы объяснить, как всё устроено... Но тогда вам будет нечего делать по вечерам.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Вы знаете, что общего между чаем и чёрными дырами? И то, и другое я оставляю без внимания — и всё исчезает.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Почему я ношу часы? Чтобы напоминать времени, кто здесь главный.
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quote-card" data-category="sarcastic">
+                <div class="quote-text">
+                    Если я исчезну, не волнуйтесь. Просто кто-то нажал "паузу".
+                </div>
+                <div class="quote-meta">
+                    <span class="quote-category">Саркастичные</span>
+                    <div class="quote-actions">
+                        <button class="quote-btn"><i class="fas fa-copy"></i></button>
+                        <button class="quote-btn"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Футер -->
+        <div class="portal-footer">
+            <p>Архив Цитат Михаэля | Хранителя Времени и Архитектора Реальности</p>
+            <p>© Бесконечность Портал Создателя</p>
+        </div>
+    </div>
+    <script src="js/Цитата.js"></script>
+</body>
+</html>
