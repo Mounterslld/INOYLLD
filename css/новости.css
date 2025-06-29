@@ -199,25 +199,6 @@ button{
 .username-link:hover {
     color: var(--primary);
 }
-
-.login-btn {
-    padding: 10px 20px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: white;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    transition: var(--transition);
-    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.2);
-}
-
-.login-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 163, 255, 0.3);
-}
-
-
         /* Основной контент */
         .main-wrapper {
             max-width: 1200px;
@@ -344,20 +325,23 @@ button{
         text-decoration: none; /* Гарантирует отсутствие подчёркивания */
     }
 
-    .login-btn {
-        padding: 8px 15px;
-        background: #2a475e;
-        color: #c7d4df;
-        border-radius: 4px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: background 0.3s, color 0.3s;
-    }
+   .login-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.2);
+}
 
-    .login-btn:hover {
-        background: #3d6b8e;
-        color: white;
-    }
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 163, 255, 0.3);
+}
+
     /* Подменю */
     .has-submenu .submenu {
         position: absolute;
