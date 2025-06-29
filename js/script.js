@@ -82,7 +82,7 @@ const games = [
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg",
         description: "Метроидвания с атмосферой и сложными боссами. Червячки с мечами!",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/367520/Hollow_Knight/"
     },
     {
         id: 11,
@@ -90,7 +90,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/594650/header.jpg",
         description: "Хардкорный PvPvE-шутер с атмосферой Луизианских болот. Охота на монстров, добыча трофеев и побег — пока вас не убили другие охотники.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/594650/Hunt_Showdown_1896/"
     },
     {
         id: 12,
@@ -98,7 +98,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg",
         description: "Масштабные сражения Второй мировой с разрушаемостью и тактическими режимами. «Роттердам» и «Огненный шторм» ждут!",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/search/?term=Battlefield+V"
     },
     {
         id: 13,
