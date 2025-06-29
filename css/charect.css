@@ -12,7 +12,6 @@
         --border-radius: 12px;
         --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    /*Кнопка*/
     /* Шапка */
     .inoy-header {
         background: linear-gradient(135deg, #0F1218 0%, #1A1E26 100%);
