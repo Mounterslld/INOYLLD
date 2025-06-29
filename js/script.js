@@ -242,7 +242,7 @@ const games = [
         genre: "indie",
         image: "https://avatars.mds.yandex.net/i?id=d99de769d017490c5240888cc4732cdd_l-4892849-images-thumbs&n=13",
         description: " игроки берут на себя роль роботов, которые выполняют приказы искусственного интеллекта по прозвищу Taxman. Их отправляют в мрачные локации, где необходимо добывать ценные предметы, оставшиеся после исчезновения человечества.",
-        downloadLink: "https://store.steampowered.com/app/2652730"
+        downloadLink: "https://store.steampowered.com/app/3241660/REPO/"
     },
     {
         id: 31,
