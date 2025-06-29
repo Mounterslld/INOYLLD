@@ -1,3 +1,17 @@
+/* Переменные */
+:root {
+    --primary: #00A3FF;
+    --primary-dark: #0085D4;
+    --accent: #FF4757;
+    --success: #2ED573;
+    --background: #0F1218;
+    --card-bg: #1A1E26;
+    --card-hover: #232833;
+    --text-primary: #E5E9F0;
+    --text-secondary: #B8BCBF;
+    --border-radius: 12px;
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* Основные стили */
 body {
     font-family: 'Arial', sans-serif;
@@ -6,116 +20,148 @@ body {
     margin: 0;
     padding: 0;
 }
+/*Кнопка*/
+button{
+    margin-right: 30px;
+}
 
 /* Шапка */
-.Inoy-header {
-    background-color: #171a21;
-    padding: 10px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 100;
+.inoy-header {
+    background: linear-gradient(135deg, #0F1218 0%, #1A1E26 100%);
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 .logo img {
-    height: 90px;
+    height: 48px;
+    transition: var(--transition);
 }
 
+.logo:hover img {
+    transform: scale(1.05);
+}
+/* Навигация */
 .main-nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 8px;
 }
 
 .main-nav li {
-    margin: 0 15px;
+    position: relative;
 }
 
 .main-nav a {
-    color: #b8b6b4;
-    font-size: 14px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 500;
     text-decoration: none;
-    transition: color 0.3s;
+    padding: 12px 16px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .main-nav a:hover {
-    color: #ffffff;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
 }
-
+/* Пользовательские элементы */
 .user-actions {
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
 .search-bar {
+    position: relative;
     display: flex;
-    margin-right: 15px;
 }
 
 .search-bar input {
-    background-color: #2b4252;
-    border: none;
-    padding: 5px 10px;
-    color: white;
-    border-radius: 3px 0 0 3px;
-    width: 200px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 18px 10px 55px;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    width: 240px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 163, 255, 0.2);
+    background-color: rgba(0, 163, 255, 0.05);
 }
 
 .search-bar button {
-    background-color: #5896be;
+    background: transparent;
     border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 0 3px 3px 0;
+    color: var(--text-secondary);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
 }
 
-.user-menu {
-    display: flex;
-    align-items: center;
-}
-
 .avatar {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid var(--primary);
+    transition: var(--transition);
+}
+
+.user-menu:hover .avatar {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px rgba(0, 163, 255, 0.3);
 }
 
 .username-link {
-    color: #b8b6b4;
-    margin-right: 10px;
-    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 500;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: var(--transition);
 }
 
 .username-link:hover {
-    color: #67c1f5;
+    color: var(--primary);
 }
 
 .login-btn {
-    padding: 8px 15px;
-    background: #2a475e;
-    color: #c7d4df;
-    border-radius: 4px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border-radius: var(--border-radius);
     text-decoration: none;
+    font-weight: 500;
     font-size: 14px;
-    transition: background 0.3s, color 0.3s;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.2);
 }
 
 .login-btn:hover {
-    background: #3d6b8e;
-    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 163, 255, 0.3);
 }
 
 /* Основной контент */
@@ -381,24 +427,22 @@ body {
         margin-top: 15px;
     }
 }
-/* Стили для подменю */
-.has-submenu {
-    position: relative;
-}
-
-.submenu {
+/* Подменю */
+.has-submenu .submenu {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);
     left: 0;
-    background-color: #2a475e;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 200px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 220px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     z-index: 1000;
-    transform: translateY(-10px);
+    transform: translateY(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 0;
 }
 
 .has-submenu:hover .submenu {
@@ -408,16 +452,19 @@ body {
 }
 
 .submenu-item {
-    display: block;
-    padding: 10px 15px;
-    color: #c7d5e0;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: var(--text-secondary);
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: var(--transition);
+    font-size: 14px;
+    gap: 10px;
 }
 
 .submenu-item:hover {
-    background-color: #3d6b8e;
-    color: white;
+    background-color: rgba(0, 163, 255, 0.1);
+    color: var(--primary);
 }
 
 /* Адаптация для мобильных */
@@ -438,4 +485,91 @@ body {
         display: block;
         opacity: 1;
     }
+}
+
+/* Кастомный скроллбар */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+.refresh-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 163, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.refresh-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 163, 255, 0.3);
+}
+
+.refresh-btn:active {
+    transform: translateY(1px);
+}
+
+.refresh-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent);
+    transition: 0.5s;
+}
+
+.refresh-btn:hover::before {
+    left: 100%;
+}
+
+.refresh-btn:disabled {
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.refresh-btn:disabled:hover::before {
+    display: none;
+}
+.spinner {
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
