@@ -1,0 +1,346 @@
+        :root {
+            --primary: #00A3FF;
+            --primary-dark: #0085D4;
+            --accent: #FF4757;
+            --success: #2ED573;
+            --background: #0F1218;
+            --card-bg: #1A1E26;
+            --card-hover: #232833;
+            --text-primary: #E5E9F0;
+            --text-secondary: #B8BCBF;
+            --border-radius: 12px;
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            --gold: #FFD700;
+            --purple: #8A2BE2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: radial-gradient(circle at center, #1a1a2e, #0c0c1d, #010114);
+            color: #e6e6e6;
+            min-height: 100vh;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.7;
+        }
+        
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle var(--duration, 5s) infinite ease-in-out;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 1; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Шапка */
+        .portal-header {
+            background: rgba(23, 26, 33, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .portal-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            letter-spacing: 2px;
+        }
+        
+        .portal-logo span {
+            color: var(--purple);
+        }
+        
+        .back-btn {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        /* Главный заголовок */
+        .main-title {
+            text-align: center;
+            margin: 40px 0 30px;
+            position: relative;
+        }
+        
+        .main-title h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+            color: var(--gold);
+            margin-bottom: 15px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        
+        .main-title p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .main-title p::before,
+        .main-title p::after {
+            content: "✧";
+            color: var(--gold);
+            margin: 0 15px;
+            opacity: 0.7;
+        }
+        
+        /* Категории цитат */
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 40px 0;
+        }
+        
+        .category-btn {
+            background: rgba(42, 71, 94, 0.4);
+            color: var(--text-secondary);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .category-btn:hover, .category-btn.active {
+            background: rgba(255, 215, 0, 0.15);
+            color: var(--gold);
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Цитаты */
+        .quotes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 30px 0 50px;
+        }
+        
+        @media (max-width: 600px) {
+            .quotes-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .quote-card {
+            background: rgba(23, 26, 33, 0.7);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .quote-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--gold), var(--purple));
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+        
+        .quote-text {
+            font-size: 20px;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-style: italic;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .quote-text::before {
+            content: '"';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            font-size: 80px;
+            color: rgba(255, 215, 0, 0.2);
+            font-family: 'Cinzel', serif;
+        }
+        
+        .quote-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+            padding-top: 20px;
+        }
+        
+        .quote-category {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--gold);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .quote-actions {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .quote-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .quote-btn:hover {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Футер */
+        .portal-footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 16px;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            margin-top: 30px;
+        }
+        
+        .portal-footer p {
+            margin-bottom: 10px;
+        }
+        
+        /* Эффекты чая */
+        .tea-steam {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            font-size: 100px;
+            color: rgba(255, 255, 255, 0.1);
+            animation: steam 10s linear forwards;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        @keyframes steam {
+            0% { transform: translate(0, 0) scale(0.5); opacity: 0.5; }
+            100% { transform: translate(-100vw, -100vh) scale(1.5); opacity: 0; }
+        }
+        
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .main-title h1 {
+                font-size: 36px;
+            }
+            
+            .quotes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote-text {
+                font-size: 18px;
+            }
+        }
+        
