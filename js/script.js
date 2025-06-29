@@ -55,7 +55,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
         description: "Киберспортивный хит Valve. Деффы против террористов на картах Dust II и Mirage.",
-        downloadLink: ""        
+        downloadLink: "https://store.steampowered.com/app/730/CounterStrike_2/"        
     },    
     {
         id: 8,
@@ -258,7 +258,7 @@ const games = [
         genre: "indie",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2881650/header.jpg",
         description: "Кооперативный хоррор для стримеров. Снимайте видео с монстрами, чтобы стать вирусным — если выживете.",
-        downloadLink: "https://store.steampowered.com/app/2881650"
+        downloadLink: "https://store.steampowered.com/app/2881650/Content_Warning/"
     },
     {
         id: 33,
