@@ -189,7 +189,7 @@ button{
 .genre-tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1px;
     margin: 0;
     padding: 0;
     list-style: none;
