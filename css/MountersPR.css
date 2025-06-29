@@ -60,48 +60,7 @@ body {
             display: flex;
             align-items: center;
         }
-        
-        .search-bar {
-            display: flex;
-            margin-right: 15px;
-        }
-        
-        .search-bar input {
-            background-color: #316282;
-            border: none;
-            padding: 5px 10px;
-            color: white;
-            border-radius: 3px 0 0 3px;
-            width: 200px;
-        }
-        
-        .search-bar button {
-            background-color: #5896be;
-            border: none;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-        }
-        
-        .user-menu {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .username {
-            margin-right: 10px;
-            color: #b8b6b4;
-            font-size: 14px;
-        }
-        
-        .avatar {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
-        
+
 /* Шапка профиля */
 .profile-header {
     background: linear-gradient(to right, #171a21, #1b2838);
