@@ -1,0 +1,264 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #e6e6e6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка профиля */
+.profile-header {
+    background: linear-gradient(to right, #171a21, #1b2838);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    border: 3px solid #67c1f5;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    color: #67c1f5;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.profile-info p {
+    color: #b8b6b4;
+    margin-bottom: 5px;
+}
+
+.level {
+    background-color: #67c1f5;
+    color: #1b2838;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Навигация */
+.profile-nav {
+    background-color: #171a21;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.profile-nav li {
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.profile-nav li:hover, .profile-nav li.active {
+    background-color: #2a475e;
+    border-bottom: 3px solid #67c1f5;
+}
+
+/* Основное содержимое */
+.profile-content {
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* Блоки контента */
+.content-block {
+    background-color: #171a21;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.block-header {
+    color: #67c1f5;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a475e;
+}
+
+/* Блок новостей */
+.news-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2a475e;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.news-title {
+    color: #67c1f5;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.news-date {
+    color: #b8b6b4;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.news-text {
+    color: #e6e6e6;
+    line-height: 1.5;
+}
+
+/* Блок медиа */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.media-item {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.media-item:hover img, .media-item:hover video {
+    transform: scale(1.05);
+}
+
+.media-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Блок загрузок */
+.download-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2a475e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.download-item:hover {
+    background-color: #1a3a53;
+}
+
+.file-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #67c1f5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #1b2838;
+    font-weight: bold;
+}
+
+.file-info {
+    flex: 1;
+}
+
+.file-name {
+    color: #e6e6e6;
+    margin-bottom: 3px;
+}
+
+.file-size {
+    color: #b8b6b4;
+    font-size: 12px;
+}
+
+.download-btn {
+    background-color: #67c1f5;
+    color: #1b2838;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #4fa8d3;
+}
+
+
+/* Статистика в сайдбаре */
+.stats-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2a475e;
+}
+
+.stats-label {
+    color: #b8b6b4;
+}
+
+.stats-value {
+    color: #e6e6e6;
+    font-weight: bold;
+}
+
+/* Футер */
+.profile-footer {
+    text-align: center;
+    color: #b8b6b4;
+    font-size: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2a475e;
+}
