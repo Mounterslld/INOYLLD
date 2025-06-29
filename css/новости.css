@@ -246,24 +246,22 @@
     background: #3d6b8e;
     color: white;
 }
-/* Стили для подменю */
-.has-submenu {
-    position: relative;
-}
-
-.submenu {
+/* Подменю */
+.has-submenu .submenu {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 8px);
     left: 0;
-    background-color: #2a475e;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 200px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    width: 220px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     z-index: 1000;
-    transform: translateY(-10px);
+    transform: translateY(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 0;
 }
 
 .has-submenu:hover .submenu {
@@ -273,17 +271,21 @@
 }
 
 .submenu-item {
-    display: block;
-    padding: 10px 15px;
-    color: #c7d5e0;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: var(--text-secondary);
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: var(--transition);
+    font-size: 14px;
+    gap: 10px;
 }
 
 .submenu-item:hover {
-    background-color: #3d6b8e;
-    color: white;
+    background-color: rgba(0, 163, 255, 0.1);
+    color: var(--primary);
 }
+
 
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
