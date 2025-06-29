@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михаэль - Создатель Вселенных</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/stigma.css">
+</head>
+<body>
+    <!-- Звездный фон -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Шапка -->
+    <header class="Inoy-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/символ.png" alt="Портал Создателя">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="nav-link" data-tab="store"><i class="fas fa-universe"></i> Вселенные</a></li>
+                    <li><a href="#" class="nav-link" data-tab="library"><i class="fas fa-time-circle"></i> Временные линии</a></li>
+                    <li><a href="#" class="nav-link" data-tab="community"><i class="fas fa-dragon"></i> Подопечные</a></li>
+                    <li class="has-submenu">
+                        <a href="#" data-tab="profile"><i class="fas fa-experiment"></i> Эксперименты</a>
+                        <div class="submenu">
+                            <a href="#" class="submenu-item"><i class="fas fa-infinity"></i> Бесконечные</a>
+                            <a href="#" class="submenu-item"><i class="fas fa-question"></i> Загадочные</a>
+                            <a href="#" class="submenu-item"><i class="fas fa-mug-tea"></i> Чайные</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link" data-tab="profile"><i class="fas fa-hat-wizard"></i> Артефакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Шапка профиля -->
+        <div class="profile-header">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <div class="level-badge">∞</div>
+            </div>
+            <div class="profile-info">
+                <h1>Михаэль <span class="title">Создатель Вселенных</span></h1>
+                <div class="status-container">
+                    <div class="status-indicator"></div>
+                    <div class="status-text">Наблюдает за вами в данный момент</div>
+                </div>
+                <div class="traits">
+                    <div class="trait">Хранитель Времени</div>
+                    <div class="trait">Архитектор Реальности</div>
+                    <div class="trait">Мастер Хаоса</div>
+                    <div class="trait">Философ</div>
+                    <div class="trait">Любитель чая</div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="create-universe"><i class="fas fa-plus-circle"></i> Создать вселенную</button>
+                    <button class="btn btn-secondary" id="distort-reality"><i class="fas fa-random"></i> Исказить реальность</button>
+                    <button class="btn btn-secondary" id="drink-tea"><i class="fas fa-mug-hot"></i> Выпить чаю</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Навигация -->
+        <div class="profile-nav">
+            <ul>
+                <li class="active">Вселенная</li>
+                <li>Способности</li>
+                <li>Артефакты</li>
+                <li>Цитаты</li>
+                <li>Эксперименты</li>
+            </ul>
+        </div>
+        
+        <!-- Основное содержимое -->
+        <div class="profile-content">
+            <div class="main-content">
+                <!-- Блок вселенной -->
+                <div class="content-block animate">
+                    <h2 class="block-header"><i class="fas fa-atom"></i> Архитектура Вселенной</h2>
+                    <div class="news-item animate delay-1">
+                        <h3 class="news-title"><i class="fas fa-star"></i> Происхождение</h3>
+                        <div class="news-date"><i class="far fa-clock"></i> За пределами времени</div>
+                        <p class="news-text">
+                            Михаэль существует вне времени и пространства, как высшее существо, чье происхождение остается загадкой даже для него самого. 
+                            Он появился в пустоте, когда еще не было понятий "до" и "после", и с тех пор посвятил себя созданию и наблюдению за вселенными.
+                        </p>
+                    </div>
+                    <div class="news-item animate delay-2">
+                        <h3 class="news-title"><i class="fas fa-user-astronaut"></i> Внешность</h3>
+                        <div class="news-date"><i class="far fa-clock"></i> Многоликий</div>
+                        <p class="news-text">
+                            Михаэль обычно появляется в виде элегантного человека в костюме с золотыми акцентами. Его глаза светятся мягким золотистым светом, 
+                            а волосы всегда слегка растрепаны, будто после прогулки по временным вихрям. На руке он носит особые часы - артефакт, 
+                            позволяющий управлять временем. Вокруг него всегда ощущается легкое искажение реальности.
+                        </p>
+                    </div>
+                    <div class="news-item animate delay-3">
+                        <h3 class="news-title"><i class="fas fa-brain"></i> Характер</h3>
+                        <div class="news-date"><i class="far fa-clock"></i> Вечный</div>
+                        <p class="news-text">
+                            Михаэль - уникальное сочетание мудреца и шутника. Он обладает бездонной мудростью о природе времени и пространства, 
+                            но при этом любит подшучивать над своими созданиями. Его философские размышления часто прерываются ироничными комментариями. 
+                            Несмотря на свою непредсказуемость, он искренне заботится о тех, кого создал, особенно о своих "подопечных" - Лизе, Алексе и дракончике.
+                        </p>
+                    </div>
+                    
+                    <!-- Блок способностей -->
+                    <h2 class="block-header" style="margin-top: 40px;"><i class="fas fa-wand-magic-sparkles"></i> Способности</h2>
+                    <div class="abilities-grid">
+                        <div class="ability-card animate delay-1">
+                            <div class="ability-icon"><i class="fas fa-clock"></i></div>
+                            <h3 class="ability-title">Манипуляция временем</h3>
+                            <p class="ability-desc">
+                                Михаэль может замедлять, ускорять или полностью останавливать время. Он создает временные петли, 
+                                чтобы изменить ход событий, и путешествует между эпохами как между комнатами в доме.
+                            </p>
+                        </div>
+                        <div class="ability-card animate delay-2">
+                            <div class="ability-icon"><i class="fas fa-cube"></i></div>
+                            <h3 class="ability-title">Искажение пространства</h3>
+                            <p class="ability-desc">
+                                Он создает порталы, изменяет гравитацию и искривляет реальность по своему желанию. 
+                                Перемещение между вселенными для него - как перешагивание через порог.
+                            </p>
+                        </div>
+                        <div class="ability-card animate delay-3">
+                            <div class="ability-icon"><i class="fas fa-globe"></i></div>
+                            <h3 class="ability-title">Создание вселенных</h3>
+                            <p class="ability-desc">
+                                Михаэль создает новые миры из пустоты, наполняя их жизнью и законами физики. 
+                                Но всегда добавляет элемент хаоса для поддержания баланса.
+                            </p>
+                        </div>
+                        <div class="ability-card animate delay-4">
+                            <div class="ability-icon"><i class="fas fa-eye"></i></div>
+                            <h3 class="ability-title">Всевидящее око</h3>
+                            <p class="ability-desc">
+                                Он может наблюдать за любым событием в любой точке любой вселенной, 
+                                не вмешиваясь напрямую. Часто делает это с чашкой чая в руке.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <!-- Блок артефактов -->
+                <div class="content-block animate delay-2">
+                    <h2 class="block-header"><i class="fas fa-hat-wizard"></i> Артефакты</h2>
+                    <div class="artifacts-grid">
+                        <div class="artifact-card animate delay-1">
+                            <div class="artifact-icon"><i class="fas fa-clock"></i></div>
+                            <h3 class="artifact-title">Часы Времени</h3>
+                            <p class="artifact-desc">
+                                Наручные часы с необычным циферблатом, показывающим течение времени во всех вселенных одновременно. 
+                                Главный инструмент контроля временных потоков.
+                            </p>
+                        </div>
+                        <div class="artifact-card animate delay-2">
+                            <div class="artifact-icon"><i class="fas fa-walking-stick"></i></div>
+                            <h3 class="artifact-title">Трость Галактик</h3>
+                            <p class="artifact-desc">
+                                Трость с набалдашником в форме миниатюрной галактики. Символ власти Михаэля над пространством. 
+                                Галактика внутри постоянно меняется и вращается.
+                            </p>
+                        </div>
+                        <div class="artifact-card animate delay-3">
+                            <div class="artifact-icon"><i class="fas fa-mug-hot"></i></div>
+                            <h3 class="artifact-title">Бесконечная Чашка</h3>
+                            <p class="artifact-desc">
+                                Чайная чашка, которая никогда не пустеет. Позволяет Михаэлю наслаждаться любимым напитком 
+                                в любой точке пространства-времени. Чаще всего с ароматом жасмина.
+                            </p>
+                        </div>
+                        <div class="artifact-card animate delay-4">
+                            <div class="artifact-icon"><i class="fas fa-scroll"></i></div>
+                            <h3 class="artifact-title">Свиток Баланса</h3>
+                            <p class="artifact-desc">
+                                Древний свиток с законами равновесия между порядком и хаосом. Михаэль периодически вносит в него поправки, 
+                                чтобы вселенные не становились слишком предсказуемыми.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Блок цитат -->
+                    <h2 class="block-header" style="margin-top: 30px;"><i class="fas fa-quote-left"></i> Цитаты</h2>
+                    <div class="quote-container animate delay-1">
+                        <p class="quote-text" id="quote-text">
+                            Время — это не линейка, а спираль. Оно закручивается, петляет, и иногда... ломается.
+                        </p>
+                        <div class="quote-author">- Михаэль</div>
+                    </div>
+                    
+                    <!-- Блок статистики -->
+                    <h2 class="block-header" style="margin-top: 30px;"><i class="fas fa-chart-network"></i> Статистика Творца</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card animate delay-1">
+                            <div class="stat-icon"><i class="fas fa-globe-americas"></i></div>
+                            <div class="stat-value" id="universes-count">∞</div>
+                            <div class="stat-label">Создано вселенных</div>
+                        </div>
+                        <div class="stat-card animate delay-2">
+                            <div class="stat-icon"><i class="fas fa-history"></i></div>
+                            <div class="stat-value" id="anomalies-count">42k</div>
+                            <div class="stat-label">Исправлено аномалий</div>
+                        </div>
+                        <div class="stat-card animate delay-3">
+                            <div class="stat-icon"><i class="fas fa-mug-hot"></i></div>
+                            <div class="stat-value" id="tea-count">∞</div>
+                            <div class="stat-label">Выпито чашек чая</div>
+                        </div>
+                        <div class="stat-card animate delay-4">
+                            <div class="stat-icon"><i class="fas fa-vials"></i></div>
+                            <div class="stat-value" id="experiments-count">7.8M</div>
+                            <div class="stat-label">Проведено экспериментов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-footer">
+            Архив Создателя | © Бесконечность Портал Хранителя Времени
+        </div>
+    </div>
+<script src="js/tempest.js"></script>
+</body>
+</html>
