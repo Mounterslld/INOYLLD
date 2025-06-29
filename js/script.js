@@ -202,7 +202,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/492720/header.jpg",
         description: "Симулятор диктатора тропического острова. Стройте дворцы, подавляйте восстания и торгуйте с сверхдержавами.",
-        downloadLink: "https://store.steampowered.com/app/492720/Tropico_6/"
+        downloadLink: "https://store.steampowered.com/app/492720/Tropico_6/ "
     },
     {
         id: 26,
