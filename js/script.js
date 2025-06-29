@@ -333,6 +333,22 @@ const games = [
         description: "Завоёвывайте муравейники врагов и ведите свою колонию сквозь полный опасностей лес в этой новаторской стратегии в реальном времени.",
         downloadLink: "https://store.steampowered.com/app/2287330/Empire_of_the_Ants/"
     },
+    {
+        id: 42,
+        title: "Win-rar",
+        genre: "App",
+        image: "https://i.playground.ru/e/tClibcTg7LjoOusE1qmSzA.png",
+        description: "Официальный сайт Win-rar",
+        downloadLink: "https://www.win-rar.com/start.html?&L=4"
+    },
+    {
+        id: 43,
+        title: "Яндекс",
+        genre: "App",
+        image: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7cda85156724131.636bfc40a926c.jpg",
+        description: "Официальный сайт Яндекс",
+        downloadLink: "https://browser.yandex.ru/"
+    },
 ];
 // Получаем элементы DOM
 const gamesGrid = document.getElementById('gamesGrid');
