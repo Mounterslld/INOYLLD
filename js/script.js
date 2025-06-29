@@ -106,7 +106,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/107410/header.jpg",
         description: "Симулятор военных действий с открытым миром. Реалистичная баллистика, моды вроде «DayZ» и «Exile», кооперативные миссии.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/107410/Arma_3/"
     },
     {
         id: 14,
@@ -114,7 +114,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1874880/header.jpg",
         description: "Обновлённая версия классики с движком Enfusion. Конфликт на острове Эверон в режимах PvP и PvE.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/1874880/Arma_Reforger/"
     },
     {
         id: 15,
@@ -122,7 +122,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/548430/header.jpg",
         description: "Кооперативный шутер про гномов-шахтёров. Добывайте минералы, отбивайтесь от жуков и кричите «За Камень и Камень!».",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/"
     },
     {
         id: 16,
@@ -130,7 +130,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/493520/header.jpg",
         description: "Хоррор-шутер для 4 игроков. Вы — заключённые, которых отправили в подземный комплекс с мутантами. Тишина — ваше оружие.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/493520/GTFO/"
     },
     {
         id: 17,
@@ -138,7 +138,7 @@ const games = [
         genre: "shooter",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2357570/header.jpg",
         description: "Командный hero-шутер от Blizzard. Новые герои, режим «Push» и ежеквартальные ивенты.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/2357570/Overwatch_2/"
     },
     {
         id: 18,
@@ -146,11 +146,11 @@ const games = [
         genre: "shooter",
         image: "https://avatars.mds.yandex.net/i?id=c77076b2393f0b6a653803e0823ac00b_l-5287893-images-thumbs&n=13",
         description: "Хардкорный шутер от первого лица с гиперреалистичной графикой. Каждый выстрел на вес золота.",
-        downloadLink: ""
+        downloadLink: "https://store.steampowered.com/app/2406770/Bodycam/"
     },
     {
         id: 19,
-        title: "Dota 2",
+        title: "",
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
         description: "Легендарная MOBA от Valve. 120+ героев, киберспортивные турниры с миллионными призами и бесконечная глубина тактик.",
@@ -162,7 +162,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/394360/header.jpg",
         description: "Глобальная стратегия про Вторую мировую войну. Управляйте страной, разрабатывайте танки и меняйте историю.",
-        downloadLink: "https://store.steampowered.com/app/394360"
+        downloadLink: "https://store.steampowered.com/app/570/Dota_2/"
     },
     {
         id: 21,
@@ -178,7 +178,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/529340/header.jpg",
         description: "Экономическая и политическая стратегия XIX века. Управляйте промышленностью, реформами и колониями.",
-        downloadLink: "https://store.steampowered.com/app/529340"
+        downloadLink: "https://store.steampowered.com/app/529340/Victoria_3/"
     },
     {
         id: 23,
@@ -186,7 +186,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2186680/header.jpg",
         description: "CRPG во вселенной Warhammer 40K. Возглавьте династию торговцев и исследуйте мрачную галактику.",
-        downloadLink: "https://store.steampowered.com/app/2186680"
+        downloadLink: "https://store.steampowered.com/app/2186680/Warhammer_40000_Rogue_Trader/"
     },
     {
         id: 24,
@@ -194,7 +194,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/466560/header.jpg",
         description: "Стратегия с викингами и мифологией. Осваивайте земли, сражайтесь с валькириями и переживите зиму.",
-        downloadLink: "https://store.steampowered.com/app/466560"
+        downloadLink: "https://store.steampowered.com/app/466560/Northgard/"
     },
     {
         id: 25,
@@ -202,7 +202,7 @@ const games = [
         genre: "strategy",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/492720/header.jpg",
         description: "Симулятор диктатора тропического острова. Стройте дворцы, подавляйте восстания и торгуйте с сверхдержавами.",
-        downloadLink: "https://store.steampowered.com/app/492720"
+        downloadLink: "https://store.steampowered.com/app/492720/Tropico_6/"
     },
     {
         id: 26,
