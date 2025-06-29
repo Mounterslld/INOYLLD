@@ -345,7 +345,7 @@ const games = [
         id: 43,
         title: "Яндекс",
         genre: "App",
-        image: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7cda85156724131.636bfc40a926c.jpg",
+        image: "https://kartinki.pics/pics/uploads/posts/2022-08/1659866794_1-kartinkin-net-p-oboi-na-glavnuyu-stranitsu-yandeksa-krasiv-1.png",
         description: "Официальный сайт Яндекс",
         downloadLink: "https://browser.yandex.ru/"
     },
@@ -367,7 +367,8 @@ function updateGenreCounts() {
         rpg: games.filter(game => game.genre === 'rpg').length,
         shooter: games.filter(game => game.genre === 'shooter').length,
         strategy: games.filter(game => game.genre === 'strategy').length,
-        indie: games.filter(game => game.genre === 'indie').length
+        indie: games.filter(game => game.genre === 'indie').length,
+        App: games.filter(game => game.genre === 'App').length
     };
 
     document.querySelector('[data-genre="all"] .game-count').textContent = counts.all;
@@ -375,6 +376,7 @@ function updateGenreCounts() {
     document.querySelector('[data-genre="shooter"] .game-count').textContent = counts.shooter;
     document.querySelector('[data-genre="strategy"] .game-count').textContent = counts.strategy;
     document.querySelector('[data-genre="indie"] .game-count').textContent = counts.indie;
+    document.querySelector('[data-genre="App"] .game-count').textContent = counts.App;
 }
 
 // Создаем карточку игры
