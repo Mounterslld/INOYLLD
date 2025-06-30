@@ -343,4 +343,63 @@
                 font-size: 18px;
             }
         }
-        
+        :root {
+  --gold: #FFD700;        /* Золотой - цвет власти */
+  --dark-gold: #D4AF37;   /* Темное золото */
+  --purple: #8A2BE2;      /* Фиолетовый - цвет тайны */
+  --space-dark: #0F1218;  /* Темный космос */
+}
+
+/* Стили только для скроллбара */
+::-webkit-scrollbar {
+  width: 14px; /* Ширина вертикального скроллбара */
+  height: 14px; /* Высота горизонтального скроллбара */
+}
+
+/* Трек (фон) скроллбара */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 215, 0, 0.1); /* Тонкая золотая рамка */
+}
+
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--gold), var(--purple));
+  border-radius: 10px;
+  border: 2px solid var(--space-dark);
+  box-shadow: inset 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Ползунок при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--purple), var(--gold));
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Угол скроллбара (где встречаются вертикальный и горизонтальный) */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Кнопки скроллбара (стрелки) - скрываем */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Анимация для плавности изменений */
+::-webkit-scrollbar-thumb {
+  transition: all 0.3s ease;
+}
+
+/* Специальные стили для Firefox */
+@supports (-moz-appearance:none) {
+  html {
+    scrollbar-color: var(--gold) rgba(255, 255, 255, 0.05);
+    scrollbar-width: thin;
+  }
+  
+  body {
+    scrollbar-color: linear-gradient(45deg, var(--gold), var(--purple)) rgba(255, 255, 255, 0.05);
+  }
+}
