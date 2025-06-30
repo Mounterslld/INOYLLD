@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подопечные Михаэля | Хранитель Времени</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pet.css">
+</head>
+<body>
+    <!-- Звездный фон -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Шапка -->
+    <header class="Inoy-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/символ.png" alt="Портал Создателя">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Tempestigma.html" class="nav-link"><i class="fas fa-universe"></i> домой</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-universe"></i> Вселенные</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-time-circle"></i> Временные линии</a></li>
+                    <li><a href="Подопечные.html" class="nav-link active"><i class="fas fa-users"></i> Подопечные</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-hat-wizard"></i> Артефакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Заголовок страницы -->
+        <div class="page-header animate">
+            <h1><i class="fas fa-users"></i> Подопечные Михаэля</h1>
+            <p>Те, кто находится под особым наблюдением Хранителя Времени. Каждый из них играет важную роль в поддержании баланса между порядком и хаосом.</p>
+        </div>
+        
+        <!-- Карточки подопечных - все вместе в одной сетке -->
+        <div class="wards-container">
+            <!-- Лиза Эон Хронос -->
+            <div class="ward-card lisa-card animate delay-1">
+                <div class="ward-header time-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Лиза Эон Хронос</h2>
+                        <div class="ward-title">Хранительница Времени</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoTimeEffect('slow')">
+                                <i class="fas fa-tachometer-alt-slow"></i> Замедление
+                            </button>
+                            <button class="ability-demo-btn" onclick="demoTimeEffect('fast')">
+                                <i class="fas fa-tachometer-alt-fast"></i> Ускорение
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Белоснежные волосы, голубые глаза, напоминающие замерзшее озеро. Носит практичную одежду с элементами часовых механизмов — шестеренки на поясе, циферблаты на нарукавниках.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> Характер</h3>
+                        <p>Любознательная и спокойная, но с мощной внутренней силой. В кризисных ситуациях сохраняет ледяное спокойствие. Обладает мудростью, несоответствующей возрасту.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Замедление времени</span>
+                            <span class="ability-tag">Ускорение времени</span>
+                            <span class="ability-tag">Остановка времени</span>
+                            <span class="ability-tag">Временные петли</span>
+                            <span class="ability-tag">Предвидение</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль видит в Лизе своего преемника. Он обучает её тонкостям управления временем, но часто испытывает её, создавая сложные временные парадоксы.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Алекс Эон Хронос -->
+            <div class="ward-card alex-card animate delay-2">
+                <div class="ward-header space-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-space-shuttle"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Алекс Эон Хронос</h2>
+                        <div class="ward-title">Мастер Пространства</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoPortalEffect()">
+                                <i class="fas fa-door-open"></i> Показать портал
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Белоснежные волосы (как у сестры-близнеца), но глаза фиолетовые, словно наполненные туманностью. Носит техно-костюм с портальными узорами, которые постоянно меняют форму.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> Характер</h3>
+                        <p>Импульсивный и смелый, с отличным чувством юмора. Любит подшучивать над Михаэлем, за что часто попадает в нелепые ситуации. Верный друг и защитник.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Телепортация</span>
+                            <span class="ability-tag">Создание порталов</span>
+                            <span class="ability-tag">Контроль гравитации</span>
+                            <span class="ability-tag">Карманные измерения</span>
+                            <span class="ability-tag">Пространственные искажения</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль относится к Алексу с теплотой и снисхождением, часто подыгрывает его шуткам. Ценит его способность находить нестандартные решения пространственных задач.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дракон-мать -->
+            <div class="ward-card dragon-mother-card animate delay-3">
+                <div class="ward-header dragon-mother-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Дракон-Мать</h2>
+                        <div class="ward-title">Страж Вечности</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoDragonPower()">
+                                <i class="fas fa-shield-alt"></i> Защита
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Массивный, величественный дракон с чешуей, которая мерцает, создавая эффект магии. Глаза светятся мягким светом, словно она видит сквозь время и пространство.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> Характер</h3>
+                        <p>Мудрая и терпеливая, но грозная, когда это необходимо. Обладает безграничным терпением, особенно к своему дракончику. Понимает всё, но говорит редко.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Древняя магия</span>
+                            <span class="ability-tag">Защита реальности</span>
+                            <span class="ability-tag">Телепатия</span>
+                            <span class="ability-tag">Создание барьеров</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль уважает Дракон-Мать как равную. Они часто сидят вместе, наблюдая за течением времени, общаясь без слов. Она — единственная, кто может дать ему совет.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дракончик -->
+            <div class="ward-card dragon-baby-card animate delay-4">
+                <div class="ward-header dragon-baby-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Дракончик Хаоса</h2>
+                        <div class="ward-title">Маленький разрушитель</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoChaosEffect()">
+                                <i class="fas fa-meteor"></i> Хаос!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Маленький, размером с кошку, дракончик с яркой переливающейся чешуей. Большие выразительные глаза, которые моментально выдают все его эмоции.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> Характер</h3>
+                        <p>Невероятно милый, но с "кусачим" характером. Любопытный до безобразия, вечно попадает в неприятности. Обожает Михаэля и старается ему во всем подражать.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Полёт</span>
+                            <span class="ability-tag">Огненное дыхание</span>
+                            <span class="ability-tag">Создание хаоса</span>
+                            <span class="ability-tag">Решение головоломок</span>
+                            <span class="ability-tag">Очарование</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль относится к дракончику с отеческой нежностью, называя его "своим маленьким разрушителем". Часто спасает его из неприятностей, которые тот сам же и создает.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Кассандра - Капитан пиратов -->
+            <div class="ward-card cassandra-card animate delay-5">
+                <div class="ward-header storm-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Кассандра</h2>
+                        <div class="ward-title">Капитан пиратов, временная странница</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoStormEffect()">
+                                <i class="fas fa-wind"></i> Временная буря
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Длинная коса, гетерохромия (голубой/зелёный глаз), шрам через левый глаз. Одежда в морском стиле с элементами временных технологий. Носит артефакт "Сердце Бури" на шее.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> Характер</h3>
+                        <p>Циничная и резкая, но невероятно верная своим союзникам. Мастер ближнего боя, всегда готова к схватке. Неустанно ищет своего пропавшего брата через временные бури.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Контроль временных бурь</span>
+                            <span class="ability-tag">Мастер ближнего боя</span>
+                            <span class="ability-tag">Навигация во времени</span>
+                            <span class="ability-tag">Пиратская тактика</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль уважает её решимость и предоставляет доступ к опасным временным линиям. Он видит в ней родственную душу - такого же искателя приключений во времени.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дариан - Штормовой Призрак -->
+            <div class="ward-card darian-card animate delay-6">
+                <div class="ward-header ghost-effect">
+                    <div class="ward-avatar">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <div class="ward-info">
+                        <h2 class="ward-name">Дариан</h2>
+                        <div class="ward-title">Штормовой Призрак</div>
+                        <div>
+                            <button class="ability-demo-btn" onclick="demoGhostEffect()">
+                                <i class="fas fa-cloud"></i> Проявиться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ward-content">
+                    <div class="ward-section">
+                        <h3><i class="fas fa-eye"></i> Внешность</h3>
+                        <p>Светлые растрёпанные волосы, татуировка-спираль на шее. Носит кулон-якорь - подарок сестры. Его образ слегка размыт, как будто он существует между мирами.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-brain"></i> История</h3>
+                        <p>Пропал в временной буре, пожертвовав собой ради спасения сестры. Теперь застрял в временной ловушке, где его энергия стабилизирует временные аномалии. Его дух блуждает между мирами.</p>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-bolt"></i> Способности</h3>
+                        <div class="ward-abilities">
+                            <span class="ability-tag">Стабилизация аномалий</span>
+                            <span class="ability-tag">Фантомное присутствие</span>
+                            <span class="ability-tag">Временные предупреждения</span>
+                            <span class="ability-tag">Энергетический якорь</span>
+                        </div>
+                    </div>
+                    <div class="ward-section">
+                        <h3><i class="fas fa-link"></i> Связь с Михаэлем</h3>
+                        <p>Михаэль поддерживает его существование в временной ловушке, используя его энергию для стабилизации критических аномалий. Он обещал Кассандре помочь найти способ освободить брата.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- История с дракончиком -->
+        <div class="story-container animate">
+            <h2 class="story-title"><i class="fas fa-book-open"></i> Истории из Хроник Михаэля</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Однажды, в своей обычной манере, дракончик, в приступе любопытства, врезался в стеллаж с артефактами. Один из хрустальных шаров упал, разбился — и вдруг... вместо осколков из него вырвался поток радужного света, закручиваясь в спираль новой реальности.</p>
+                    <p class="story-highlight">Михаэль, подняв бровь, прокомментировал: "Ох… Кажется, наш маленький разрушитель только что создал нечто интересное. Давай-ка глянем…"</p>
+                    <p>Он щелкнул пальцами — и всех присутствующих затянуло в вихрь хаотичных образов: летающие острова, реки из газировки, деревья, растущие в форме вопросительных знаков. Где-то вдали был слышен восторженный визг дракончика: <span class="story-highlight">"УРА! Я КРУТОЙ!"</span></p>
+                    <p>Так благодаря "неуклюжести" дракончика была открыта новая форма реальности, которую Михаэль позже назвал "Игровой Вселенной", где законы физики подчинялись только воображению.</p>
+                </div>
+                <div class="story-image">
+                    <i class="fas fa-dragon"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-footer">
+            Архив Хранителя Времени | © Бесконечность Хроники Михаэля
+        </div>
+    </div>
+    <script src="js/pet.js"></script>
+</body>
+</html>
