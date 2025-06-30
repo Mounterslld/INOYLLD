@@ -1,4 +1,4 @@
-            document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             // Создание звездного фона
             const starsContainer = document.getElementById('stars');
             for (let i = 0; i < 200; i++) {
@@ -13,102 +13,6 @@
                 starsContainer.appendChild(star);
             }
             
-            // Цитаты Михаэля
-            const quotes = [
-                "Время — это не линейка, а спираль. Оно закручивается, петляет, и иногда... ломается.",
-                "Вы думали, что это конец? О, нет, это только начало.",
-                "Я создал всё это, а теперь убираю за вами. Как нянька.",
-                "Что такое время, если не иллюзия? Особенно обеденное.",
-                "Хаос — это не беспорядок, а высшая форма гармонии.",
-                "Создать вселенную просто. Сложно не вмешиваться, когда они начинают творить глупости.",
-                "Чай — это жидкость времени. Каждый глоток — новая эпоха.",
-                "Если всё предопределено, зачем мне эти часы? Хотя... они красивые.",
-                "Иногда я останавливаю время просто чтобы допить чай. Не судите строго."
-            ];
-            
-            // Элементы DOM
-            const quoteText = document.getElementById('quote-text');
-            const createBtn = document.getElementById('create-universe');
-            const distortBtn = document.getElementById('distort-reality');
-            const teaBtn = document.getElementById('drink-tea');
-            
-            // Показать случайную цитату
-            function showRandomQuote() {
-                const randomIndex = Math.floor(Math.random() * quotes.length);
-                quoteText.textContent = quotes[randomIndex];
-            }
-            
-            // Обработчики событий
-            createBtn.addEventListener('click', function() {
-                const originalText = createBtn.innerHTML;
-                createBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Создание...';
-                createBtn.disabled = true;
-                
-                // Эффект создания вселенной
-                document.body.style.background = 'radial-gradient(circle, #ff00cc, #3333ff, #00ccff)';
-                document.body.style.backgroundSize = '400% 400%';
-                
-                setTimeout(() => {
-                    createBtn.innerHTML = originalText;
-                    createBtn.disabled = false;
-                    document.body.style.background = 'radial-gradient(circle at center, #1a1a2e, #0c0c1d, #010114)';
-                    
-                    // Показать сообщение
-                    alert('Новая вселенная успешно создана! Михаэль добавил в нее немного хаоса для баланса.');
-                }, 2000);
-            });
-            
-            distortBtn.addEventListener('click', function() {
-                // Искажение реальности - анимация элементов
-                const elements = document.querySelectorAll('*:not(.stars, .star)');
-                elements.forEach(el => {
-                    const randomX = (Math.random() - 0.5) * 30;
-                    const randomY = (Math.random() - 0.5) * 30;
-                    const randomRotate = (Math.random() - 0.5) * 20;
-                    const randomScale = 1 + (Math.random() - 0.5) * 0.2;
-                    
-                    el.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${randomRotate}deg) scale(${randomScale})`;
-                    el.style.transition = 'transform 0.5s ease';
-                });
-                
-                setTimeout(() => {
-                    elements.forEach(el => {
-                        el.style.transform = '';
-                    });
-                    alert('Реальность успешно искажена! Михаэль довольно улыбается.');
-                }, 1000);
-            });
-            
-            teaBtn.addEventListener('click', function() {
-                teaBtn.innerHTML = '<i class="fas fa-mug-hot"></i> Наслаждается чаем...';
-                teaBtn.disabled = true;
-                
-                // Эффект пара от чая
-                const steam = document.createElement('div');
-                steam.style.position = 'fixed';
-                steam.style.bottom = '20px';
-                steam.style.right = '20px';
-                steam.style.fontSize = '48px';
-                steam.innerHTML = '☕';
-                steam.style.opacity = '0.8';
-                steam.style.zIndex = '1000';
-                steam.style.animation = 'steam 3s ease forwards';
-                document.body.appendChild(steam);
-                
-                setTimeout(() => {
-                    teaBtn.innerHTML = '<i class="fas fa-mug-hot"></i> Выпить чаю';
-                    teaBtn.disabled = false;
-                    steam.remove();
-                    showRandomQuote();
-                }, 3000);
-            });
-            
-            // Показать случайную цитату при загрузке
-            showRandomQuote();
-            
-            // Смена цитаты каждые 20 секунд
-            setInterval(showRandomQuote, 20000);
-            
             // Анимация при загрузке
             setTimeout(() => {
                 document.querySelectorAll('.animate').forEach((el, index) => {
@@ -117,110 +21,23 @@
                 });
             }, 100);
             
-            // Добавить стили для анимации пара
-            const style = document.createElement('style');
-            style.innerHTML = `
-                @keyframes steam {
-                    0% { transform: translateY(0) scale(1); opacity: 0.8; }
-                    100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
-                }
-            `;
-            document.head.appendChild(style);
+            // Эффект при наведении на карточки
+            const cards = document.querySelectorAll('.ward-card');
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const angleX = (y - centerY) / 20;
+                    const angleY = (centerX - x) / 20;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateY(-10px)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(-10px)';
+                });
+            });
         });
-        // Функция для инициализации скроллбара Михаэля
-function initMichaelScrollbar() {
-    // Создаем стили для скроллбара
-    const style = document.createElement('style');
-    style.id = 'michael-scrollbar-style';
-    style.textContent = `
-        /* Основной скроллбар */
-        ::-webkit-scrollbar {
-            width: 14px;
-            height: 14px;
-        }
-        
-        /* Трек (фон) скроллбара */
-        ::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 215, 0, 0.1);
-        }
-        
-        /* Ползунок скроллбара */
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(45deg, #FFD700, #8A2BE2);
-            border-radius: 10px;
-            border: 2px solid rgba(23, 26, 33, 0.9);
-            box-shadow: inset 0 0 5px rgba(255, 215, 0, 0.5);
-            transition: all 0.3s ease;
-        }
-        
-        /* Ползунок при наведении */
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(45deg, #8A2BE2, #FFD700);
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-        }
-        
-        /* Угол скроллбара */
-        ::-webkit-scrollbar-corner {
-            background: transparent;
-        }
-        
-        /* Кнопки скроллбара (стрелки) */
-        ::-webkit-scrollbar-button {
-            display: none;
-        }
-    `;
-    
-    // Добавляем стили в head документа
-    document.head.appendChild(style);
-    
-    // Для Firefox (который не поддерживает ::-webkit-scrollbar)
-    if (typeof InstallTrigger !== 'undefined') {
-        const firefoxStyle = document.createElement('style');
-        firefoxStyle.textContent = `
-            html {
-                scrollbar-color: #FFD700 rgba(255, 255, 255, 0.05);
-                scrollbar-width: thin;
-            }
-        `;
-        document.head.appendChild(firefoxStyle);
-    }
-    
-    // Добавляем обработчик для плавного скролла
-    document.documentElement.style.scrollBehavior = 'smooth';
-    
-    console.log('Скроллбар Михаэля инициализирован!');
-}
-
-// Функция для удаления скроллбара Михаэля
-function removeMichaelScrollbar() {
-    const style = document.getElementById('michael-scrollbar-style');
-    if (style) {
-        style.remove();
-    }
-    
-    // Удаляем стили для Firefox
-    const firefoxStyles = document.querySelectorAll('style');
-    firefoxStyles.forEach(style => {
-        if (style.textContent.includes('scrollbar-color')) {
-            style.remove();
-        }
-    });
-    
-    // Возвращаем стандартное поведение скролла
-    document.documentElement.style.scrollBehavior = '';
-    
-    console.log('Скроллбар Михаэля удален!');
-}
-
-// Инициализация при загрузке страницы
-document.addEventListener('DOMContentLoaded', initMichaelScrollbar);
-
-// Экспорт функций для использования в модульных системах
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        initMichaelScrollbar,
-        removeMichaelScrollbar
-    };
-}
